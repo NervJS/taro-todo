@@ -1,0 +1,60 @@
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+  color: #333333;
+}
+checkbox, radio {
+  margin-right: 10rpx;
+}
+
+form {
+  width: 100%;
+}
+button {
+  padding: 0;
+  &:after {
+    border: none;
+  }
+}
+
+.todo {
+  &_add {
+    padding: 10px;
+    display: flex;
+    &_input {
+      flex: 1;
+      display: block;
+      width: 250px;
+      height: 40px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-right: 10px;
+    }
+    &_btn {
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+      color: #fff;
+    }
+  }
+}
+
+.list {
+  padding: 10px;
+  &_item {
+    display: flex;
+    .dele_btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #333333;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}
