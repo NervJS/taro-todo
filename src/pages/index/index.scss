@@ -21,21 +21,21 @@ button {
 
 .todo {
   &_add {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     &_input {
       flex: 1;
       display: block;
-      width: 250px;
-      height: 40px;
+      width: 500px;
+      height: 80px;
       border: 1px solid #ccc;
       padding: 10px;
       box-sizing: border-box;
-      margin-right: 10px;
+      margin-right: 20px;
     }
     &_btn {
-      width: 100px;
-      height: 40px;
+      width: 200px;
+      height: 80px;
       text-align: center;
       background-color: #5cb85c;
       border-color: #4cae4c;
@@ -45,15 +45,15 @@ button {
 }
 
 .list {
-  padding: 10px;
+  padding: 20px;
   &_item {
     display: flex;
     .dele_btn {
-      width: 30px;
-      height: 30px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      border: 1px solid #333333;
-      line-height: 30px;
+      border: 2px solid #333333;
+      line-height: 60px;
       text-align: center;
     }
   }
