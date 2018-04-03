@@ -2,6 +2,8 @@ import Alien, { Component } from 'alienjs'
 import { View, Text, Input, Button, Image } from '@jd/alien-components'
 import './index.scss'
 
+import { diao } from '../../utils'
+
 export default class Index extends Component {
   config = {
     navigationBarTitleText: '首页'
