@@ -61,6 +61,10 @@ export default class Index extends Component {
     })
   }
 
+  componentDidMount () {
+    console.log(diao())
+  }
+
   render () {
     return (
       <View className='todo'>
