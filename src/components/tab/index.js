@@ -1,6 +1,8 @@
 import Alien, { Component } from 'alienjs'
 import { View } from '@jd/alien-components'
 
+import { diao } from '../../utils'
+
 import './tab.scss'
 
 class Tab extends Component {
@@ -9,8 +11,9 @@ class Tab extends Component {
 
   }
 
-  handler () {
+  handler = () => {
     console.log(this.props.t)
+    console.log(diao)
     this.props.xx()
   }
 

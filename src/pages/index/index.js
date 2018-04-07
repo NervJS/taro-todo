@@ -4,7 +4,7 @@ import './index.scss'
 
 import { diao } from '../../utils'
 
-const x = require('../../utils/x.json')
+// const x = require('../../utils/x.json')
 
 const dogPic = require('../../asset/1.jpg')
 
