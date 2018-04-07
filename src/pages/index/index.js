@@ -78,6 +78,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='todo'>
+        <Button onClick={this.navigate}>跳转</Button>
         <View>
           <Image src={this.state.imagesList[0]} />
         </View>
