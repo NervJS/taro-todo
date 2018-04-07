@@ -1,7 +1,3 @@
-function diao () {
+export function diao () {
   return 'sdsd'
-}
-
-export {
-  diao
 }

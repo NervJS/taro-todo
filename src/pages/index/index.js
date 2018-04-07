@@ -4,6 +4,12 @@ import './index.scss'
 
 import { diao } from '../../utils'
 
+const x = require('../../utils/x.json')
+
+const dogPic = require('../../asset/1.jpg')
+
+import Tab from '../../components/tab'
+
 export default class Index extends Component {
   config = {
     navigationBarTitleText: '首页'
@@ -61,6 +67,10 @@ export default class Index extends Component {
     })
   }
 
+  xxhanlder = () => {
+    console.log('sdsddssd')
+  }
+
   componentDidMount () {
     console.log(diao())
   }
@@ -70,6 +80,11 @@ export default class Index extends Component {
       <View className='todo'>
         <View>
           <Image src={this.state.imagesList[0]} />
+        </View>
+        <Tab xx={this.xxhanlder} t={1} />
+        <Tab xx={this.xxhanlder} t={2} />
+        <View>
+          <Image src={dogPic} />
         </View>
         <View><Text>12</Text></View>
         <View className='todo_add'>

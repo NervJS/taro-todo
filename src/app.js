@@ -1,12 +1,13 @@
 import Alien, { Component } from 'alienjs'
-import Index from './pages/index'
+import Index from './pages/index/index'
 
 import './app.scss'
 
 class App extends Component {
   config = {
     pages: [
-      'pages/index'
+      'pages/index',
+      'pages/hello'
     ],
     window: {
       backgroundTextStyle: 'light',
