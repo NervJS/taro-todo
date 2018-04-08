@@ -32,3 +32,9 @@ class App extends Component {
     )
   }
 }
+
+setTimeout(() => {
+  Alien.navigateTo({
+    url: '/pages/about/about'
+  })
+}, 2000)
