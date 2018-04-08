@@ -1,5 +1,5 @@
-import Alien, { Component } from 'alienjs'
-import { View, Text, Input, Button, Image } from '@jd/alien-components'
+import Taro, { Component } from '@tarojs/taro'
+import { View, Text, Input, Button, Image } from '@tarojs/components'
 
 import './hello.scss'
 

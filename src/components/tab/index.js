@@ -1,5 +1,5 @@
-import Alien, { Component } from 'alienjs'
-import { View } from '@jd/alien-components'
+import Taro, { Component } from '@tarojs/taro'
+import { View } from '@tarojs/components'
 
 import { diao } from '../../utils'
 

@@ -1,22 +1,22 @@
 {
-  "name": "alien-todo",
+  "name": "taro-todo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "alien build --type h5"
+    "build": "taro build --type h5"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@jd/alien-components": "^1.0.3",
-    "alienjs": "^0.0.1",
+    "@tarojs/components": "^0.0.2",
+    "@tarojs/taro": "^0.0.2",
     "nervjs": "^1.2.16"
   },
   "devDependencies": {
-    "alien-plugin-babel": "^0.0.1",
-    "alien-plugin-sass": "^0.0.2",
-    "alien-webpack-runner": "^0.0.9",
+    "@tarojs/plugin-babel": "^0.0.2",
+    "@tarojs/plugin-sass": "^0.0.2",
+    "@tarojs/webpack-runner": "^0.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

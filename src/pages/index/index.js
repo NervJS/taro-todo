@@ -1,5 +1,5 @@
-import Alien, { Component } from 'alienjs'
-import { View, Text, Input, Button, Image } from '@jd/alien-components'
+import Taro, { Component } from '@tarojs/taro'
+import { View, Text, Input, Button, Image } from '@tarojs/components'
 import './index.scss'
 import { diao } from '../../utils'
 import dogPic from '../../asset/1.jpg'
@@ -26,7 +26,7 @@ export default class Index extends Component {
   }
 
   addTodoClick = () => {
-    Alien.request(`https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`)
+    Taro.request(`https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`)
       .then((res) => {
         this.setState({
           githubList: res.items

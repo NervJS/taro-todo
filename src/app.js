@@ -1,4 +1,4 @@
-import Alien, { Component } from 'alienjs'
+import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index/index'
 
 import './app.scss'
@@ -34,7 +34,7 @@ class App extends Component {
 }
 
 setTimeout(() => {
-  Alien.navigateTo({
+  Taro.navigateTo({
     url: '/pages/about/about'
   })
 }, 2000)

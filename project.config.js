@@ -1,5 +1,5 @@
 module.exports = {
-  projectName: 'alien-todo',
+  projectName: 'taro-todo',
   designWidth: 750,
   plugins: {
     babel: {
