@@ -13,6 +13,22 @@ export default class About extends Component {
     }
   }
 
+  componentDidMount () {
+    console.log('about mount')
+  }
+
+  componentDidShow () {
+    console.log('about show')
+  }
+
+  componentDidHide () {
+    console.log('about hide')
+  }
+
+  componentWillUnmount () {
+    console.log('about unmount')
+  }
+
   render () {
     const text = this.state.text
     return (

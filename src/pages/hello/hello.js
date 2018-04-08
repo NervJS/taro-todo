@@ -3,9 +3,25 @@ import { View, Text, Input, Button, Image } from '@jd/alien-components'
 
 import './hello.scss'
 
-export default class Index extends Component {
+export default class Hello extends Component {
   config = {
     navigationBarTitleText: 'hello'
+  }
+  
+  componentDidMount () {
+    console.log('hello mount')
+  }
+
+  componentDidShow () {
+    console.log('hello show')
+  }
+
+  componentDidHide () {
+    console.log('hello hide')
+  }
+
+  componentWillUnmount () {
+    console.log('hello unmount')
   }
 
   render () {

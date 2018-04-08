@@ -1,14 +1,11 @@
 import Alien, { Component } from 'alienjs'
 import { View, Text, Input, Button, Image } from '@jd/alien-components'
 import './index.scss'
-
 import { diao } from '../../utils'
+import dogPic from '../../asset/1.jpg'
+import Tab from '../../components/tab'
 
 // const x = require('../../utils/x.json')
-
-const dogPic = require('../../asset/1.jpg')
-
-import Tab from '../../components/tab'
 
 export default class Index extends Component {
   config = {
@@ -72,7 +69,20 @@ export default class Index extends Component {
   }
 
   componentDidMount () {
+    console.log('index mount')
     console.log(diao())
+  }
+
+  componentDidShow () {
+    console.log('index show')
+  }
+
+  componentDidHide () {
+    console.log('index hide')
+  }
+
+  componentWillUnmount () {
+    console.log('index unmount')
   }
 
   render () {
@@ -117,4 +127,3 @@ export default class Index extends Component {
     )
   }
 }
-
