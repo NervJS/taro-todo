@@ -3,7 +3,7 @@ import { View, Text, Input, Button, Image } from '@tarojs/components'
 import './index.scss'
 import { diao } from '../../utils'
 import dogPic from '../../asset/1.jpg'
-import Tab from '../../components/tab'
+import Tab from '../../components/tab/tab'
 
 // const x = require('../../utils/x.json')
 
@@ -25,16 +25,14 @@ export default class Index extends Component {
     }
   }
 
-  addTodoClick = () => {
-    Taro.request(`https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`)
-      .then((res) => {
-        this.setState({
-          githubList: res.items
-        })
-      })
+  addTodoClick = async () => {
     this.addTodo({
       createTime: new Date().getTime(),
       title: this.state.inputTodoValue
+    })
+    const res = await Taro.request(`https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`)
+    this.setState({
+      githubList: res.items
     })
   }
 
@@ -52,7 +50,7 @@ export default class Index extends Component {
       this.setState({
         inputTodoValue: e.target.value
       })
-    }, 100)
+    }, 10)
   }
 
   deleteTodo (index, e) {
@@ -86,6 +84,7 @@ export default class Index extends Component {
   }
 
   navigate () {
+    console.log(Taro)
     Taro.navigateTo({
       url: '/pages/about/about'
     })
@@ -94,7 +93,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='todo'>
-        <Button onClick={this.navigate}>跳转</Button>
+        <Button className='navigate_btn' onClick={this.navigate}>跳转</Button>
         <View>
           <Image src={this.state.imagesList[0]} />
         </View>
@@ -103,7 +102,7 @@ export default class Index extends Component {
         <View>
           <Image src={dogPic} />
         </View>
-        <View><Text>12</Text></View>
+        <View className="title"><Text>TODO List</Text></View>
         <View className='todo_add'>
           <Input className='todo_add_input' type='text' onInput={this.setTodoValue} />
           <Button className='todo_add_btn' onClick={this.addTodoClick}>添加</Button>
@@ -111,7 +110,7 @@ export default class Index extends Component {
         <View className='list'>
           {this.state.todos.map((item, index) => {
             return <View className='list_item'>
-              <Text>{item.title}</Text>
+              <Text className='list_item_title'>{item.title}</Text>
               <Button className='dele_btn' onClick={this.deleteTodo.bind(this, index)}>x</Button>
             </View>
           })}

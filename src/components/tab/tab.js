@@ -20,7 +20,7 @@ class Tab extends Component {
   render () {
     return (
       <View className='tab'>
-        <View onClick={this.handler}>12</View>
+        <View onClick={this.handler}>componentTab{this.props.t}</View>
       </View>
     )
   }

@@ -20,6 +20,11 @@ button {
   }
 }
 
+.title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
 .todo {
   &_add {
     padding: 20px;
@@ -41,14 +46,24 @@ button {
       background-color: #5cb85c;
       border-color: #4cae4c;
       color: #fff;
+      border-radius: 10px;
+      line-height: 80px;
+      font-size: 28px;
     }
   }
 }
 
 .list {
   padding: 20px;
+  font-size: 32px;
   &_item {
     display: flex;
+    padding: 10px;
+    &_title {
+      width: 100%;
+      flex: 1;
+      display: block;
+    }
     .dele_btn {
       width: 60px;
       height: 60px;
@@ -56,6 +71,7 @@ button {
       border: 2px solid #333333;
       line-height: 60px;
       text-align: center;
+      background-color: #fff;
     }
   }
 }

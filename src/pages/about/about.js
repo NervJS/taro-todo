@@ -39,8 +39,8 @@ export default class About extends Component {
     const text = this.state.text
     return (
       <View className='about'>
-        <Button onClick={this.navigate}>跳转</Button>
-        <Text>{text}</Text>
+        <Button className='navigate_btn' onClick={this.navigate}>跳转</Button>
+        <View><Text>{text}</Text></View>
       </View>
     )
   }
