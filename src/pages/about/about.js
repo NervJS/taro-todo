@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components'
 
 export default class About extends Component {
   config = {
@@ -29,10 +29,17 @@ export default class About extends Component {
     console.log('about unmount')
   }
 
+  navigate () {
+    Taro.navigateTo({
+      url: '/pages/index/index'
+    })
+  }
+
   render () {
     const text = this.state.text
     return (
       <View className='about'>
+        <Button onClick={this.navigate}>跳转</Button>
         <Text>{text}</Text>
       </View>
     )

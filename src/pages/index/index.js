@@ -85,6 +85,12 @@ export default class Index extends Component {
     console.log('index unmount')
   }
 
+  navigate () {
+    Taro.navigateTo({
+      url: '/pages/about/about'
+    })
+  }
+
   render () {
     return (
       <View className='todo'>

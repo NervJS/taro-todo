@@ -32,9 +32,3 @@ class App extends Component {
     )
   }
 }
-
-setTimeout(() => {
-  Taro.navigateTo({
-    url: '/pages/about/about'
-  })
-}, 2000)
