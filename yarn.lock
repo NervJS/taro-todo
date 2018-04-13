@@ -2,9 +2,16 @@
 # yarn lockfile v1
 
 
-"@tarojs/components@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/components/-/components-0.0.2.tgz#9e4c5014c2877c723a4e2402743f8e8f4f47d0fb"
+"@tarojs/async-await@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.8.tgz#21d9e8b24dd000d8a87a97a04d3f52d8c13f7aea"
+  dependencies:
+    promise-polyfill "^7.1.2"
+    regenerator-runtime "^0.11.1"
+
+"@tarojs/components@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.8.tgz#bbe86fad2fe7ae676cc12670e77d6e99b26e933f"
   dependencies:
     classnames "^2.2.5"
     lodash "^4.17.5"
@@ -12,29 +19,34 @@
     omit.js "^1.0.0"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-babel/-/plugin-babel-0.0.2.tgz#47a9917b4b40bc75ad53db64c2045abfec5d7b8c"
+"@tarojs/plugin-babel@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.8.tgz#276a34b92824c59b714f74c14bc7de4f341f5bd2"
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-sass@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/plugin-sass/-/plugin-sass-0.0.2.tgz#e3c46da0cf1c99ecd916dff037c41dfce196e4d2"
+"@tarojs/plugin-sass@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.8.tgz#d19bac37600d25144fc5e87197f8a7ef5ab8108c"
   dependencies:
     node-sass "^4.8.3"
 
-"@tarojs/taro@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/taro/-/taro-0.0.2.tgz#690bdbd54fc67596e25fe116da8721e52bc1e06c"
+"@tarojs/router@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.8.tgz#bcd662643533169fa09b18cdd4f6a7b2ca4e6052"
 
-"@tarojs/webpack-runner@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tarojs/webpack-runner/-/webpack-runner-0.0.2.tgz#b32d9a7e879f6d7762bac007bb1610b1255d113c"
+"@tarojs/taro@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.8.tgz#2dc3f7efeacc4551a0572431922c5dd6d9cb0192"
+
+"@tarojs/webpack-runner@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.8.tgz#c99591e8ba3b0b8bd8e2f756e7dcc0a52b9dc618"
   dependencies:
     autoprefixer "^8.2.0"
     babel-core "^6.26.0"
     babel-loader "^7.1.4"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
     babel-plugin-transform-class-properties "^6.24.1"
     babel-plugin-transform-decorators-legacy "^1.3.4"
     babel-plugin-transform-object-rest-spread "^6.26.0"
@@ -450,6 +462,10 @@ babel-plugin-syntax-class-properties@^6.8.0:
 babel-plugin-syntax-decorators@^6.1.18:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz#312563b4dbde3cc806cee3e416cceeaddd11ac0b"
+
+babel-plugin-syntax-dynamic-import@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.npmjs.org/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz#8d6a26229c83745a9982a441051572caa179b1da"
 
 babel-plugin-syntax-exponentiation-operator@^6.8.0:
   version "6.13.0"
@@ -2804,6 +2820,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.2.1:
+  version "4.17.8"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.8.tgz#6fa8c8c5d337481df0bdf1c0d899d42473121e45"
+
 lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
@@ -2832,7 +2852,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@~4.17.4:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@~4.17.4:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
@@ -2840,7 +2860,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -3787,6 +3807,10 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
 
+promise-polyfill@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
+
 prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
@@ -3966,11 +3990,20 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
+redux@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.npmjs.org/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
+  dependencies:
+    lodash "^4.2.1"
+    lodash-es "^4.2.1"
+    loose-envify "^1.1.0"
+    symbol-observable "^1.0.3"
+
 regenerate@^1.2.1:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.3.3.tgz#0c336d3980553d755c39b586ae3b20aa49c82b7f"
 
-regenerator-runtime@^0.11.0:
+regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
@@ -4584,6 +4617,10 @@ svgo@^0.7.0:
     mkdirp "~0.5.1"
     sax "~1.2.1"
     whet.extend "~0.9.9"
+
+symbol-observable@^1.0.3:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 tapable@^0.2.7:
   version "0.2.8"

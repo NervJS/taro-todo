@@ -9,11 +9,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tarojs/components": "^0.0.8",
     "@tarojs/async-await": "^0.0.8",
-    "@tarojs/taro": "^0.0.8",
+    "@tarojs/components": "^0.0.8",
     "@tarojs/router": "^0.0.8",
-    "nervjs": "^1.2.16"
+    "@tarojs/taro": "^0.0.8",
+    "nervjs": "^1.2.16",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "@tarojs/plugin-babel": "^0.0.8",

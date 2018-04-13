@@ -1,5 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import '@tarojs/async-await'
+
+import { createStore } from 'redux'
+
 import Index from './pages/index/index'
 
 import './app.scss'
