@@ -12,29 +12,29 @@ export default class PageView extends Component {
   }
   render() {
     return (
-      <View class="container">
+      <View className="container">
         <Head title="view" />
-        <View class="page-body">
-          <View class="page-section">
-            <View class="page-section-title">
+        <View className="page-body">
+          <View className="page-section">
+            <View className="page-section-title">
               <Text>flex-direction: row\n横向布局</Text>
             </View>
-            <View class="page-section-spacing">
-              <View class="flex-wrp" style="flex-direction:row;">
-                <View class="flex-item demo-text-1" />
-                <View class="flex-item demo-text-2" />
-                <View class="flex-item demo-text-3" />
+            <View className="page-section-spacing">
+              <View className="flex-wrp" style="flex-direction:row;">
+                <View className="flex-item demo-text-1" />
+                <View className="flex-item demo-text-2" />
+                <View className="flex-item demo-text-3" />
               </View>
             </View>
           </View>
-          <View class="page-section">
-            <View class="page-section-title">
+          <View className="page-section">
+            <View className="page-section-title">
               <Text>flex-direction: column\n纵向布局</Text>
             </View>
-            <View class="flex-wrp" style="flex-direction:column;">
-              <View class="flex-item flex-item-V demo-text-1" />
-              <View class="flex-item flex-item-V demo-text-2" />
-              <View class="flex-item flex-item-V demo-text-3" />
+            <View className="flex-wrp" style="flex-direction:column;">
+              <View className="flex-item flex-item-V demo-text-1" />
+              <View className="flex-item flex-item-V demo-text-2" />
+              <View className="flex-item flex-item-V demo-text-3" />
             </View>
           </View>
         </View>

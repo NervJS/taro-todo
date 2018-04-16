@@ -3,11 +3,11 @@ import { View } from '@tarojs/components'
 export default class Head extends Component {
   render() {
     return (
-      <View class="page-head">
-        <View class="page-head-title">{this.props.title}</View>
-        <View class="page-head-line" />
+      <View className="page-head">
+        <View className="page-head-title">{this.props.title}</View>
+        <View className="page-head-line" />
         {this.props.desc && (
-          <View class="page-head-desc">{this.props.desc}</View>
+          <View className="page-head-desc">{this.props.desc}</View>
         )}
       </View>
     )
