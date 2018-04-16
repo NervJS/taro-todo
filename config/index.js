@@ -1,6 +1,8 @@
-module.exports = {
+const config = {
   projectName: 'taro-todo',
   designWidth: 750,
+  sourceRoot: 'src',
+  outputRoot: 'dist',
   plugins: {
     babel: {
       sourceMap: true,
@@ -18,22 +20,23 @@ module.exports = {
 
   },
   h5: {
-    sourceRoot: 'src',
-    outputRoot: 'dist',
     publicPath: '/',
-    // the directory contains images/fonts/media etc. files
     staticDirectory: 'static',
-    // define global constants for application see https://webpack.js.org/plugins/define-plugin/
     defineConstants: {
     },
-    // support functions
     module: {
       postcss: {
-        // autoprefixer plugin config
         autoprefixer: {
           enable: true
         }
       }
     }
   }
+}
+
+module.exports = function (merge) {
+  if (process.env.NODE_ENV === 'development') {
+    return merge({}, config, require('./dev'))
+  }
+  return merge({}, config, require('./prod'))
 }

@@ -69,6 +69,9 @@ export default class Index extends Component {
   componentDidMount () {
     console.log('index mount')
     console.log(diao())
+    if (process.env.NODE_ENV === 'development') {
+      console.log('development')
+    }
   }
 
   componentDidShow () {
