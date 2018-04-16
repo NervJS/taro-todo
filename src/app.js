@@ -10,6 +10,9 @@ import './app.scss'
 class App extends Component {
   config = {
     pages: [
+      'pages/component/pages/view/view',
+      'pages/component/index',
+
       'pages/index/index',
       'pages/hello/hello',
       'pages/about/about'
@@ -22,17 +25,15 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() {}
 
-  componentDidShow () {}
+  componentDidShow() {}
 
-  componentDidHide () {}
+  componentDidHide() {}
 
-  componentCatchError () {}
+  componentCatchError() {}
 
-  render () {
-    return (
-      <Index />
-    )
+  render() {
+    return <Index />
   }
 }
