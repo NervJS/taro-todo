@@ -16,14 +16,15 @@ const config = {
       ]
     },
   },
+  defineConstants: {
+    WWW: '"www"'
+  },
   weapp: {
 
   },
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
-    defineConstants: {
-    },
     module: {
       postcss: {
         autoprefixer: {

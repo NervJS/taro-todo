@@ -72,6 +72,7 @@ export default class Index extends Component {
     if (process.env.NODE_ENV === 'development') {
       console.log('development')
     }
+    console.log(WWW)
   }
 
   componentDidShow () {
