@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@tarojs/async-await@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.8.tgz#21d9e8b24dd000d8a87a97a04d3f52d8c13f7aea"
+"@tarojs/async-await@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.10.tgz#ce8da26654ce75e64bba75b69356b374264ad78c"
   dependencies:
     promise-polyfill "^7.1.2"
     regenerator-runtime "^0.11.1"
 
-"@tarojs/components@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.8.tgz#bbe86fad2fe7ae676cc12670e77d6e99b26e933f"
+"@tarojs/components@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.10.tgz#2f4c3949c5c8c3f0b77bc21f63014c864c4b9978"
   dependencies:
     classnames "^2.2.5"
     lodash "^4.17.5"
@@ -19,29 +19,33 @@
     omit.js "^1.0.0"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.8.tgz#276a34b92824c59b714f74c14bc7de4f341f5bd2"
+"@tarojs/plugin-babel@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.10.tgz#230373f0ff9b80a416d40235a6308984fa79923d"
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-sass@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.8.tgz#d19bac37600d25144fc5e87197f8a7ef5ab8108c"
+"@tarojs/plugin-sass@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.10.tgz#88c734b7b01a20f1fffb45c856e333285ddaae5e"
   dependencies:
     node-sass "^4.8.3"
 
-"@tarojs/router@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.8.tgz#bcd662643533169fa09b18cdd4f6a7b2ca4e6052"
+"@tarojs/redux@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.10.tgz#c5fcfb5ffaf817147cdb92e4c781a97b06f82524"
 
-"@tarojs/taro@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.8.tgz#2dc3f7efeacc4551a0572431922c5dd6d9cb0192"
+"@tarojs/router@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.10.tgz#224d7cb93a72df356a02b9ac5df970f6779c0ee8"
 
-"@tarojs/webpack-runner@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.8.tgz#c99591e8ba3b0b8bd8e2f756e7dcc0a52b9dc618"
+"@tarojs/taro@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.10.tgz#05be181c423154c92ed33c233fb043708b1606c7"
+
+"@tarojs/webpack-runner@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.10.tgz#64b08c0a806a51fd33dbe576288cd41ab428ee81"
   dependencies:
     autoprefixer "^8.2.0"
     babel-core "^6.26.0"
@@ -2436,7 +2440,7 @@ interpret@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
 
-invariant@^2.2.2:
+invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -2820,7 +2824,7 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash-es@^4.2.1:
+lodash-es@^4.17.4, lodash-es@^4.2.1:
   version "4.17.8"
   resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.8.tgz#6fa8c8c5d337481df0bdf1c0d899d42473121e45"
 
@@ -2852,7 +2856,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@~4.17.4:
+lodash@^4.0.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@~4.17.4:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
@@ -3989,6 +3993,23 @@ reduce-function-call@^1.0.1:
   resolved "https://registry.yarnpkg.com/reduce-function-call/-/reduce-function-call-1.0.2.tgz#5a200bf92e0e37751752fe45b0ab330fd4b6be99"
   dependencies:
     balanced-match "^0.4.2"
+
+reduce-reducers@^0.1.0:
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/reduce-reducers/-/reduce-reducers-0.1.5.tgz#ff77ca8068ff41007319b8b4b91533c7e0e54576"
+
+redux-actions@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/redux-actions/-/redux-actions-2.3.0.tgz#4e9967d86594b8c235bab6e08960b5c185f296d3"
+  dependencies:
+    invariant "^2.2.1"
+    lodash "^4.13.1"
+    lodash-es "^4.17.4"
+    reduce-reducers "^0.1.0"
+
+redux-thunk@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
 redux@^3.7.2:
   version "3.7.2"

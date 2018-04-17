@@ -1,13 +1,17 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Input, Button, Image } from '@tarojs/components'
+import { connect } from '@tarojs/redux'
 import './index.scss'
 import { diao } from '../../utils'
 import dogPic from '../../asset/1.jpg'
 import Tab from '../../components/tab/tab'
 
+
+import { increment, decrement, asyncInc } from '../../actions/counter'
+
 // const x = require('../../utils/x.json')
 
-export default class Index extends Component {
+class Index extends Component {
   config = {
     navigationBarTitleText: '首页'
   }
@@ -72,7 +76,7 @@ export default class Index extends Component {
     if (process.env.NODE_ENV === 'development') {
       console.log('development')
     }
-    console.log(WWW)
+    console.log(this)
   }
 
   componentDidShow () {
@@ -98,6 +102,10 @@ export default class Index extends Component {
     return (
       <View className='todo'>
         <Button className='navigate_btn' onClick={this.navigate}>跳转</Button>
+        <Button className='add_btn' onClick={this.props.inc}>+</Button>
+        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
+        <Button className='dec_btn' onClick={this.props.asyncInc}>async</Button>
+        <View>{this.props.counter.num}</View>
         <View>
           <Image src={this.state.imagesList[0]} />
         </View>
@@ -136,3 +144,17 @@ export default class Index extends Component {
     )
   }
 }
+
+export default connect(({ counter }) => ({
+  counter
+}), (dispatch) => ({
+  inc () {
+    dispatch(increment())
+  },
+  dec () {
+    dispatch(decrement())
+  },
+  asyncInc () {
+    dispatch(asyncInc())
+  }
+}))(Index)
