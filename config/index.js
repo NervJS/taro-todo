@@ -17,7 +17,7 @@ const config = {
     },
   },
   defineConstants: {
-    WWW: '"www"'
+    WWW: JSON.stringify('www')
   },
   weapp: {
 

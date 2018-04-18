@@ -4,8 +4,10 @@ import { connect } from '@tarojs/redux'
 import './index.scss'
 import { diao } from '../../utils'
 import dogPic from '../../asset/1.jpg'
+// import xx from '../../utils/x.json'
 import Tab from '../../components/tab/tab'
 
+// console.log(xx)
 
 import { increment, decrement, asyncInc } from '../../actions/counter'
 
@@ -70,14 +72,14 @@ class Index extends Component {
     console.log('sdsddssd')
   }
 
-  componentDidMount () {
-    console.log('index mount')
-    console.log(diao())
-    if (process.env.NODE_ENV === 'development') {
-      console.log('development')
-    }
-    console.log(this)
-  }
+  // componentDidMount () {
+  //   console.log('index mount')
+  //   console.log(diao())
+  //   if (process.env.NODE_ENV === 'development') {
+  //     console.log('development')
+  //   }
+  //   console.log(WWW)
+  // }
 
   componentDidShow () {
     console.log('index show')
