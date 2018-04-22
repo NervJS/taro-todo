@@ -14,9 +14,18 @@ setStore(store)
 class App extends Component {
   config = {
     pages: [
-      'pages/component/pages/view/view',
       'pages/component/index',
-
+      'pages/component/pages/form/form',
+      'pages/component/pages/input/input',
+      'pages/component/pages/view/view',
+      'pages/component/pages/checkbox/checkbox',
+      'pages/component/pages/radio/radio',
+      'pages/component/pages/button/button',
+      'pages/component/pages/label/label',
+      'pages/component/pages/picker/picker',
+      'pages/component/pages/slider/slider',
+      'pages/component/pages/switch/switch',
+      'pages/component/pages/textarea/textarea',
       'pages/index/index',
       'pages/hello/hello',
       'pages/about/about'
