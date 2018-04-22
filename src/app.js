@@ -14,9 +14,16 @@ setStore(store)
 class App extends Component {
   config = {
     pages: [
-      'pages/component/pages/view/view',
       'pages/component/index',
-
+      'pages/component/pages/view/view',
+      'pages/component/pages/scroll-view/scroll-view',
+      'pages/component/pages/swiper/swiper',
+      'pages/component/pages/icon/icon',
+      'pages/component/pages/progress/progress',
+      'pages/component/pages/image/image',
+      'pages/component/pages/audio/audio',
+      'pages/component/pages/video/video',
+      'pages/component/pages/text/text',
       'pages/index/index',
       'pages/hello/hello',
       'pages/about/about'

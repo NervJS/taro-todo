@@ -1,0 +1,28 @@
+.page__con__list {
+  display: flex;
+  margin-bottom: 40px;
+
+  &.icon_sml {
+    icon {
+      width:140px;
+      text-align:center;
+      position:relative;
+      top:24px;
+    }
+  }
+}
+
+.icon_right {
+  margin-left: 40px;
+  padding-top: 20px;
+
+  &_head {
+    color: #333;
+    font-size: 32px;
+  }
+
+  &_tit {
+    color: #999;
+    font-size: 26px;
+  }
+}
