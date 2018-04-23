@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@tarojs/async-await@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.10.tgz#ce8da26654ce75e64bba75b69356b374264ad78c"
+"@tarojs/async-await@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.17.tgz#ae73f33da00690edbb89886dafe46f89bd802657"
   dependencies:
     promise-polyfill "^7.1.2"
     regenerator-runtime "^0.11.1"
 
-"@tarojs/components@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.10.tgz#2f4c3949c5c8c3f0b77bc21f63014c864c4b9978"
+"@tarojs/components@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.17.tgz#4c5a5310618e1524c355b67fdf7f84a6ae259d49"
   dependencies:
     classnames "^2.2.5"
     lodash "^4.17.5"
@@ -19,33 +19,33 @@
     omit.js "^1.0.0"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.10.tgz#230373f0ff9b80a416d40235a6308984fa79923d"
+"@tarojs/plugin-babel@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.17.tgz#36181f4308df8725193417d06f39ad4c8753ffdb"
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-sass@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.10.tgz#88c734b7b01a20f1fffb45c856e333285ddaae5e"
+"@tarojs/plugin-sass@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.17.tgz#19515764216789dd2797e00a8c3cd37cc138fa1a"
   dependencies:
     node-sass "^4.8.3"
 
-"@tarojs/redux@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.10.tgz#c5fcfb5ffaf817147cdb92e4c781a97b06f82524"
+"@tarojs/redux@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.17.tgz#075207862820bc274b82d6ea0aab4729f6c1a1fc"
 
-"@tarojs/router@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.10.tgz#224d7cb93a72df356a02b9ac5df970f6779c0ee8"
+"@tarojs/router@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.17.tgz#d99e1f2c5acda62916b0865fbcecd14f0fbf77fc"
 
-"@tarojs/taro@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.10.tgz#05be181c423154c92ed33c233fb043708b1606c7"
+"@tarojs/taro@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.17.tgz#154626b4be518e151105669fd6c1612a75b304a2"
 
-"@tarojs/webpack-runner@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.10.tgz#64b08c0a806a51fd33dbe576288cd41ab428ee81"
+"@tarojs/webpack-runner@^0.0.17":
+  version "0.0.17"
+  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.17.tgz#031283e96e33fb83b56b17f94c4043e71079b419"
   dependencies:
     autoprefixer "^8.2.0"
     babel-core "^6.26.0"
