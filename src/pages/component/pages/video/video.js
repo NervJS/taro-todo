@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
-import './view.scss'
+import './video.scss'
 export default class PageView extends Component {
   config = {
     navigationBarTitleText: 'video'

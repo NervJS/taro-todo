@@ -22,7 +22,6 @@ class App extends Component {
       'pages/component/pages/image/image',
       'pages/component/pages/audio/audio',
       'pages/component/pages/video/video',
-      'pages/component/pages/text/text',
       'pages/component/pages/swiper/swiper',
       'pages/component/pages/form/form',
       'pages/component/pages/input/input',
