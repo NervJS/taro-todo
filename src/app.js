@@ -26,7 +26,6 @@ class App extends Component {
       'pages/component/pages/swiper/swiper',
       'pages/component/pages/form/form',
       'pages/component/pages/input/input',
-      'pages/component/pages/view/view',
       'pages/component/pages/checkbox/checkbox',
       'pages/component/pages/radio/radio',
       'pages/component/pages/button/button',

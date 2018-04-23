@@ -20,11 +20,7 @@ export default class PageView extends Component {
               <Text>flex-direction: row\n横向布局</Text>
             </View>
             <View className="page-section-spacing">
-              <View className="flex-wrp" style="flex-direction:row;">
-                <View className="flex-item demo-text-1" />
-                <View className="flex-item demo-text-2" />
-                <View className="flex-item demo-text-3" />
-              </View>
+              <Text>添加文本</Text>
             </View>
           </View>
           <View className="page-section">
@@ -32,9 +28,20 @@ export default class PageView extends Component {
               <Text>flex-direction: column\n纵向布局</Text>
             </View>
             <View className="flex-wrp" style="flex-direction:column;">
-              <View className="flex-item flex-item-V demo-text-1" />
-              <View className="flex-item flex-item-V demo-text-2" />
-              <View className="flex-item flex-item-V demo-text-3" />
+              <Button
+                size='default'
+                type='default'
+                disabled=false
+              >
+                add line
+              </Button>
+              <Button
+                size='default'
+                type='default'
+                disabled=false
+              >
+                remove line
+              </Button>
             </View>
           </View>
         </View>
