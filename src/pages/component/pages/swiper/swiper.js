@@ -22,22 +22,22 @@ export default class PageView extends Component {
             <View className="page-section-title">
               <Text>flex-direction: row\n横向布局</Text>
             </View>
-              <Swiper autoplay=false
-                      indicatorDots=true
-                      slideMult='10'
-                      duration='300'
-                      interval='3000'
-                      indicatorColor='blue'
-                      indicatorActiveColor='red'
-                      current='0'
-                      circular=true
-                      preMargin='20'>
-                <view className='swiper_item'>
-                  <View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>
-                  <View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>
-                  <View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>
-                </view>
-              </Swiper>
+              {/*<Swiper autoplay=false*/}
+                      {/*indicatorDots=true*/}
+                      {/*slideMult='10'*/}
+                      {/*duration='300'*/}
+                      {/*interval='3000'*/}
+                      {/*indicatorColor='blue'*/}
+                      {/*indicatorActiveColor='red'*/}
+                      {/*current='0'*/}
+                      {/*circular=true*/}
+                      {/*preMargin='20'>*/}
+                {/*<view className='swiper_item'>*/}
+                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
+                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
+                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
+                {/*</view>*/}
+              {/*</Swiper>*/}
           </View>
           <View className="page-section">
             <View className="page-section-title">
