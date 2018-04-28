@@ -3,49 +3,58 @@ import { View, Text } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './text.scss'
+
 export default class PageView extends Component {
   config = {
     navigationBarTitleText: 'text'
   }
-  constructor() {
+
+  constructor () {
     super(...arguments)
+
+    this.contents = []
   }
-  render() {
+
+
+  add = e => {
+    const cot = this.contents
+    cot.push({text: 'hello world'})
+
+    this.setState(() => {
+      return {contents: cot}
+    })
+  }
+
+  remove = e => {
+    const cot = this.contents
+    cot.pop()
+    this.setState(() => {
+      return {contents: cot}
+    })
+  }
+
+  render () {
     return (
       <View className="container">
-        <Head title="text" />
+        <Head title="text"/>
         <View className="page-body">
           <View className="page-section">
-            <View className="page-section-title">
-              <Text>flex-direction: row\n横向布局</Text>
-            </View>
-            <View className="page-section-spacing">
-              <Text>添加文本</Text>
-            </View>
+            <view className="text_content">
+              {this.contents.map(item => {
+                return (
+                  <Text>{item.text}</Text>
+                )
+              })}
+            </view>
           </View>
           <View className="page-section">
-            <View className="page-section-title">
-              <Text>flex-direction: column\n纵向布局</Text>
-            </View>
             <View className="flex-wrp" style="flex-direction:column;">
-              <Button
-                size='default'
-                type='default'
-                disabled=false
-              >
-                add line
-              </Button>
-              <Button
-                size='default'
-                type='default'
-                disabled=false
-              >
-                remove line
-              </Button>
+              <Button className="btn-max-w button_style" plain type="default" onClick={this.add}>add line</Button>
+              <Button className="btn-max-w button_style" plain type="default" disabled={this.contents.length ? false:true} onClick={this.remove}>remove line</Button>
             </View>
           </View>
         </View>
-        <Foot />
+        <Foot/>
       </View>
     )
   }

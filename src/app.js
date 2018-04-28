@@ -28,6 +28,7 @@ class App extends Component {
       'pages/component/pages/checkbox/checkbox',
       'pages/component/pages/radio/radio',
       'pages/component/pages/button/button',
+      'pages/component/pages/text/text',
       'pages/component/pages/label/label',
       'pages/component/pages/picker/picker',
       'pages/component/pages/slider/slider',
