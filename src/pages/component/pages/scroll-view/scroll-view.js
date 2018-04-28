@@ -19,34 +19,34 @@ export default class PageView extends Component {
             <View className="page-section-title">
               <Text>Vertical Scroll\n纵向滚动</Text>
             </View>
-            <ScrollView
+            <ScrollView class='scrollview'
               scroll-y
               scroll-with-animation
               scroll-top='0'
-              style='height: 200px;'
+              style='height: 150px;'
               lower-threshold='20'
               upperThreshold='20'
               bindscrolltoupper={this.handleBindscrolltoupper}
               onScroll={this.handleScroll}
             >
-              <View style='height:100px;background-color:#FF6164;' />
-              <View style='height:100px;background-color:#FFBE34;' />
-              <View style='height:100px;background-color:#00BB2B;' />
+              <View style='height:150px;background-color:rgb(26,173,25);'>A</View>
+              <View style='height:150px;background-color:rgb(39,130,215);'>B</View>
+              <View style='height:150px;background-color:rgb(241,241,241);color: #333;'>C</View>
             </ScrollView>
           </View>
           <View className="page-section">
             <View className="page-section-title">
               <Text> Horizontal \n横向滚动</Text>
             </View>
-            <ScrollView
+            <ScrollView class='scrollview'
               scroll-x
-              scroll-left='30'
+              scroll-left='0'
               style='white-space: nowrap;'
               bindscrolltolower={this.handleBindscrolltolower}
             >
-              <View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;' />
-              <View style='height:100px;background-color:#FFBE34;display:inline-block;width: 200px;' />
-              <View style='height:100px;background-color:#00BB2B;display:inline-block;width: 200px;' />
+              <View style='height:150px;background-color:rgb(26,173,25);display:inline-block;width: 300px;'>A</View>
+              <View style='height:150px;background-color:rgb(39,130,215);display:inline-block;width: 300px;'>B</View>
+              <View style='height:150px;background-color:rgb(241,241,241);display:inline-block;width: 300px;color: #333;'>C</View>
             </ScrollView>
           </View>
         </View>

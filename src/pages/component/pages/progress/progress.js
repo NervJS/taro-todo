@@ -16,7 +16,7 @@ export default class PageView extends Component {
         <Head title="progress" />
         <View className="page-body">
           <View className="page-section">
-            <View className="page-section-spacing">
+            <View className="page-section-spacing" style='margin-bottom:104rpx;'>
               <Progress percent={20} showInfo strokeWidth={2} />
             </View>
             <View className="page-section-spacing">

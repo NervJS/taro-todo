@@ -1,21 +1,25 @@
 .page__con__list {
+  position: relative;
   display: flex;
   margin-bottom: 40px;
+  padding-left: 180px;
+  min-height: 120px;
+
+  icon {
+    position: absolute;
+    left: 0;
+  }
 
   &.icon_sml {
     icon {
-      width:140px;
-      text-align:center;
-      position:relative;
-      top:24px;
+      position: absolute;
+      left: 40px;
+      top:10px;
     }
   }
 }
 
 .icon_right {
-  margin-left: 40px;
-  padding-top: 20px;
-
   &_head {
     color: #333;
     font-size: 32px;
