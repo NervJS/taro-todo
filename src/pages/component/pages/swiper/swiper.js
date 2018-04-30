@@ -19,34 +19,53 @@ export default class PageView extends Component {
         <Head title="swiper"/>
         <View className="page-body">
           <View className="page-section">
-            <View className="page-section-title">
-              <Text>flex-direction: row\n横向布局</Text>
+            <Swiper autoplay={false}
+                    indicatorDots={true}
+                    slideMult='10'
+                    duration='300'
+                    interval='3000'
+                    indicatorColor='#999'
+                    indicatorActiveColor='#333'
+                    current='0'
+                    circular={true}
+                    preMargin='20'>
+              <SwiperItem>
+                <View class='content' style='height:100%;background-color:rgb(26,173,25);'>A</View>
+              </SwiperItem>
+              <SwiperItem>
+                <View class='content' style='height:100%;background-color:rgb(39,130,215);'>B</View>
+              </SwiperItem>
+              <SwiperItem>
+                <View class='content' style='height:100%;background-color:rgb(241,241,241);color: #333;'>C</View>
+              </SwiperItem>
+            </Swiper>
+          </View>
+          <View className="page-section">
+            <View className="switch-list">
+              <View className="switch-list__item">
+                <View className="switch-list__text">指示点</View>
+                <Switch checked />
+              </View>
+              <View className="switch-list__item">
+                <View className="switch-list__text">自动播放</View>
+                <Switch />
+              </View>
             </View>
-              {/*<Swiper autoplay=false*/}
-                      {/*indicatorDots=true*/}
-                      {/*slideMult='10'*/}
-                      {/*duration='300'*/}
-                      {/*interval='3000'*/}
-                      {/*indicatorColor='blue'*/}
-                      {/*indicatorActiveColor='red'*/}
-                      {/*current='0'*/}
-                      {/*circular=true*/}
-                      {/*preMargin='20'>*/}
-                {/*<view className='swiper_item'>*/}
-                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
-                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
-                  {/*<View style='height:100px;background-color:#FF6164;display:inline-block;width:200px;'/>*/}
-                {/*</view>*/}
-              {/*</Swiper>*/}
           </View>
           <View className="page-section">
             <View className="page-section-title">
-              <Text>flex-direction: column\n纵向布局</Text>
+              <Text>幻灯片切换时长(ms)</Text>
             </View>
-            <View className="flex-wrp" style="flex-direction:column;">
-              <View className="flex-item flex-item-V demo-text-1"/>
-              <View className="flex-item flex-item-V demo-text-2"/>
-              <View className="flex-item flex-item-V demo-text-3"/>
+            <View className="page-section-spacing-reset">
+              <Slider step="1" value="50" showValue  min="500" max="2000"/>
+            </View>
+          </View>
+          <View className="page-section">
+            <View className="page-section-title">
+              <Text>自动播放间隔时长(ms)</Text>
+            </View>
+            <View className="page-section-spacing-reset">
+              <Slider step="1" value="100" showValue min="2000" max="10000"/>
             </View>
           </View>
         </View>
