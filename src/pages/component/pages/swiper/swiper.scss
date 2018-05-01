@@ -1,0 +1,37 @@
+swiper {
+  margin: 0 100px;
+}
+
+.content {
+  text-align: center;
+  line-height: 300px;
+  color: #fff;
+}
+.switch-list {
+  position: relative;
+  padding: 0 15rpx;
+  background-color: #FFFFFF;
+  &__item {
+    position: relative;
+    display: flex;
+    padding: 10rpx 0;
+    &:not(:first-child) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 15rpx;
+        right: -15rpx;
+        top: 0;
+        height: 1rpx;
+        border-top: 1rpx solid #e5e5e5;
+        color: #e5e5e5;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 15rpx;
+  }
+}
