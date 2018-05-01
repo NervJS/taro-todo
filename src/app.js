@@ -36,6 +36,9 @@ class App extends Component {
       'pages/component/pages/textarea/textarea',
       'pages/component/pages/canvas/canvas',
       'pages/component/pages/map/map',
+      'pages/component/pages/navigator/navigator',
+      'pages/component/pages/redirectPage/redirectPage',
+      'pages/component/pages/navigatePage/navigatePage',
       'pages/index/index',
       'pages/hello/hello',
       'pages/about/about'
