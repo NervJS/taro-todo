@@ -11,6 +11,36 @@ export default class PageView extends Component {
 
   constructor () {
     super(...arguments)
+    this.state = {
+      autoplay: false,
+      indicatorDots: true,
+      interval: '5000',
+      duration: '500'
+    }
+  }
+
+   hideIndication (e) {
+     this.setState({
+       indicatorDots: !this.state.indicatorDots
+     })
+  }
+
+  isAutoPlay() {
+    this.setState({
+      autoplay: !this.state.autoplay
+    })
+  }
+
+  setInterval (e) {
+    this.setState({
+      interval: e.detail.value
+    })
+  }
+
+  setDuration (e) {
+    this.setState({
+      duration: e.detail.value
+    })
   }
 
   render () {
@@ -19,11 +49,11 @@ export default class PageView extends Component {
         <Head title="swiper"/>
         <View className="page-body">
           <View className="page-section">
-            <Swiper autoplay={false}
-                    indicatorDots={true}
+            <Swiper autoplay={this.state.autoplay}
+                    indicatorDots={this.state.indicatorDots}
                     slideMult='10'
-                    duration='300'
-                    interval='3000'
+                    duration={this.state.duration}
+                    interval={this.state.interval}
                     indicatorColor='#999'
                     indicatorActiveColor='#333'
                     current='0'
@@ -44,11 +74,11 @@ export default class PageView extends Component {
             <View className="switch-list">
               <View className="switch-list__item">
                 <View className="switch-list__text">指示点</View>
-                <Switch checked />
+                <Switch checked onChange={this.hideIndication} />
               </View>
               <View className="switch-list__item">
                 <View className="switch-list__text">自动播放</View>
-                <Switch />
+                <Switch onChange={this.isAutoPlay} />
               </View>
             </View>
           </View>
@@ -57,7 +87,7 @@ export default class PageView extends Component {
               <Text>幻灯片切换时长(ms)</Text>
             </View>
             <View className="page-section-spacing-reset">
-              <Slider step="1" value="50" showValue  min="500" max="2000"/>
+              <Slider step="1" value="50" showValue  min="500" max="2000" onChange={this.setDuration}/>
             </View>
           </View>
           <View className="page-section">
@@ -65,7 +95,8 @@ export default class PageView extends Component {
               <Text>自动播放间隔时长(ms)</Text>
             </View>
             <View className="page-section-spacing-reset">
-              <Slider step="1" value="100" showValue min="2000" max="10000"/>
+              <Slider step="1" value="100" showValue min="2000" max="10000" onChange={this.setInterval}
+                      />
             </View>
           </View>
         </View>
