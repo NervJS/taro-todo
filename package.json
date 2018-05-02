@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "taro build --type h5"
+    "build:h5": "taro build --type h5",
+    "serve:h5": "taro build --type h5 --watch"
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +15,7 @@
     "@tarojs/redux": "^0.0.17",
     "@tarojs/router": "^0.0.17",
     "@tarojs/taro": "^0.0.17",
+    "nerv-redux": "^1.2.17",
     "nervjs": "^1.2.16",
     "redux": "^3.7.2",
     "redux-actions": "^2.3.0",

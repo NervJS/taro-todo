@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { connect } from '@tarojs/redux'
-import { View, Image } from '@tarojs/components'
+import { View, Image, Button } from '@tarojs/components'
 
 import { diao } from '../../utils'
 

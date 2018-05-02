@@ -3091,6 +3091,10 @@ neo-async@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.0.tgz#76b1c823130cca26acfbaccc8fbaf0a2fa33b18f"
 
+nerv-redux@^1.2.17:
+  version "1.2.17"
+  resolved "https://registry.yarnpkg.com/nerv-redux/-/nerv-redux-1.2.17.tgz#358d7dc71f5d5d24accd3ce92c3d5c6ceca1f839"
+
 nerv-shared@1.2.15:
   version "1.2.15"
   resolved "https://registry.yarnpkg.com/nerv-shared/-/nerv-shared-1.2.15.tgz#9e7c7f3e32447fe8ae40efdd2ddc85b395797e77"
