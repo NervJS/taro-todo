@@ -75,7 +75,7 @@ export default class Index extends Component {
     //   item.icon = require(`../../asset/component/${item.id}.png`)
     // })
   }
-  kindToggle(e) {
+  kindToggle = (e) => {
     var id = e.currentTarget.id,
       list = this.state.list
     for (var i = 0, len = list.length; i < len; ++i) {
@@ -125,7 +125,7 @@ export default class Index extends Component {
                     <View
                       id={item.id}
                       className={item.hdClass}
-                      onClick={kindToggle}
+                      onClick={this.kindToggle}
                     >
                       <View className="kind-list-text">{item.name}</View>
                       <Image className="kind-list-img" src={item.imgSrc} />
