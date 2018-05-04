@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:h5": "taro build --type h5",
-    "serve:h5": "taro build --type h5 --watch"
+    "serve:h5": "taro build --type h5 --watch",
+    "build:weapp": "taro build --type weapp",
+    "serve:weapp": "taro build --type weapp --watch"
   },
   "author": "",
   "license": "MIT",
