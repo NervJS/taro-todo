@@ -16,16 +16,16 @@
 page {
   background-color: #f8f8f8;
   height: 100%;
-  font-size: 32rpx;
+  font-size: 32px;
   line-height: 1.6;
 }
 checkbox,
 radio {
-  margin-right: 10rpx;
+  margin-right: 10px;
 }
 button {
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 form {
   width: 100%;
@@ -45,29 +45,29 @@ form {
   flex-direction: column;
   min-height: 100%;
   justify-content: space-between;
-  font-size: 32rpx;
+  font-size: 32px;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
 }
 .page-head {
-  padding: 60rpx 50rpx 80rpx;
+  padding: 60px 50px 80px;
   text-align: center;
 }
 .page-head-title {
   display: inline-block;
-  padding: 0 40rpx 20rpx 40rpx;
-  font-size: 32rpx;
+  padding: 0 40px 20px 40px;
+  font-size: 32px;
   color: #bebebe;
 }
 .page-head-line {
   margin: 0 auto;
-  width: 150rpx;
-  height: 2rpx;
+  width: 150px;
+  height: 2px;
   background-color: #d8d8d8;
 }
 .page-head-desc {
-  padding-top: 20rpx;
+  padding-top: 20px;
   color: #9b9b9b;
-  font-size: 32rpx;
+  font-size: 32px;
 }
 
 .page-body {
@@ -83,7 +83,7 @@ form {
 }
 .page-body-wording {
   text-align: center;
-  padding: 200rpx 100rpx;
+  padding: 200px 100px;
 }
 .page-body-info {
   display: flex;
@@ -91,37 +91,37 @@ form {
   align-items: center;
   background-color: #fff;
   width: 100%;
-  padding: 50rpx 0 150rpx 0;
+  padding: 50px 0 150px 0;
 }
 .page-body-title {
-  margin-bottom: 100rpx;
-  font-size: 32rpx;
+  margin-bottom: 100px;
+  font-size: 32px;
 }
 .page-body-text {
-  font-size: 30rpx;
+  font-size: 30px;
   line-height: 26px;
   color: #ccc;
 }
 .page-body-text-small {
-  font-size: 24rpx;
+  font-size: 24px;
   color: #000;
-  margin-bottom: 100rpx;
+  margin-bottom: 100px;
 }
 
 .page-foot {
-  margin: 100rpx 0 30rpx 0;
+  margin: 100px 0 30px 0;
   text-align: center;
   color: #1aad19;
   font-size: 0;
 }
 .icon-foot {
-  width: 152rpx;
-  height: 23rpx;
+  width: 152px;
+  height: 23px;
 }
 
 .page-section {
   width: 100%;
-  margin-bottom: 60rpx;
+  margin-bottom: 60px;
 }
 .page-section_center {
   display: flex;
@@ -133,21 +133,21 @@ form {
 }
 .page-section-gap {
   box-sizing: border-box;
-  padding: 0 30rpx;
+  padding: 0 30px;
 }
 .page-section-spacing {
   box-sizing: border-box;
-  padding: 0 80rpx;
+  padding: 0 80px;
 }
 .page-section-spacing-reset{
-  padding: 0 30rpx;
+  padding: 0 30px;
 }
 .page-section-title {
-  font-size: 28rpx;
+  font-size: 28px;
   color: #999999;
-  margin-bottom: 10rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .page-section-gap .page-section-title {
   padding-left: 0;
@@ -158,16 +158,16 @@ form {
 
 /* widget */
 .btn-area {
-  margin-top: 60rpx;
+  margin-top: 60px;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 30rpx;
+  padding: 0 30px;
 }
 
 .image-plus {
-  width: 150rpx;
-  height: 150rpx;
-  border: 2rpx solid #d9d9d9;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #d9d9d9;
   position: relative;
 }
 .image-plus-nb {
@@ -175,15 +175,15 @@ form {
 }
 .image-plus-text {
   color: #888888;
-  font-size: 28rpx;
+  font-size: 28px;
 }
 .image-plus-horizontal {
   position: absolute;
   top: 50%;
   left: 50%;
   background-color: #d9d9d9;
-  width: 4rpx;
-  height: 80rpx;
+  width: 4px;
+  height: 80px;
   transform: translate(-50%, -50%);
 }
 .image-plus-vertical {
@@ -191,8 +191,8 @@ form {
   top: 50%;
   left: 50%;
   background-color: #d9d9d9;
-  width: 80rpx;
-  height: 4rpx;
+  width: 80px;
+  height: 4px;
   transform: translate(-50%, -50%);
 }
 
@@ -202,7 +202,7 @@ form {
   justify-content: center;
   background-color: #1aad19;
   color: #ffffff;
-  font-size: 36rpx;
+  font-size: 36px;
 }
 .demo-text-1:before {
   content: 'A';
@@ -217,7 +217,7 @@ form {
   justify-content: center;
   background-color: #2782d7;
   color: #ffffff;
-  font-size: 36rpx;
+  font-size: 36px;
 }
 .demo-text-2:before {
   content: 'B';
@@ -232,7 +232,7 @@ form {
   justify-content: center;
   background-color: #f1f1f1;
   color: #353535;
-  font-size: 36rpx;
+  font-size: 36px;
 }
 .demo-text-3:before {
   content: 'C';

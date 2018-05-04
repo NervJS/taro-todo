@@ -57,7 +57,7 @@ export default class PageCheckbox extends Component {
                         </View>
                         <View className="page-section-spacing-reset">
                             <Checkbox value="选中" checked>选中</Checkbox>
-                            <Checkbox style="margin-left: 20rpx" value="未选中">未选中</Checkbox>
+                            <Checkbox style="margin-left: 20px" value="未选中">未选中</Checkbox>
                         </View>
                     </View>
                     <View className="page-section">

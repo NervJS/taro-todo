@@ -130,7 +130,7 @@ export default class PageForm extends Component {
                             <View className="page-section-title">
                                 <Text>input</Text>
                             </View>
-                            <View className="page-section-spacing-reset" style="background:#fff;padding:15rpx 30rpx;">
+                            <View className="page-section-spacing-reset" style="background:#fff;padding:15px 30px;">
                                 <Input name='input' type='text' placeholder='这是一个输入框' onChange={this.onHandleChange} />
                             </View>
                         </View>

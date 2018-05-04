@@ -36,7 +36,7 @@ export default class PageLabel extends Component {
                                 <Checkbox value='美国'>美国</Checkbox>
                             </Label>
                         </View>
-                        <View className="page-section-spacing-reset" style="margin-top:15rpx">
+                        <View className="page-section-spacing-reset" style="margin-top:15px">
                             <Label for='2' key='2'>
                                 <Checkbox value='中国' checked>中国</Checkbox>
                             </Label>
@@ -52,7 +52,7 @@ export default class PageLabel extends Component {
                                     <Radio value='USA'>USA</Radio>
                                 </Label>
                             </View>
-                            <View className="page-section-spacing-reset" style="margin-top:15rpx">
+                            <View className="page-section-spacing-reset" style="margin-top:15px">
                                 <Label for='4' key='4'>
                                     <Radio value='CHN' checked>CHN</Radio>
                                 </Label>
@@ -68,13 +68,13 @@ export default class PageLabel extends Component {
                                 <Checkbox value='选项一' checked={this.state.checked}>选项一</Checkbox>
                             </Label>
                         </View>
-                        <View className="page-section-spacing-reset" style="margin-top:15rpx">
+                        <View className="page-section-spacing-reset" style="margin-top:15px">
                             <Label for='6' key='6'>
                                 <Checkbox value='选项二'>选项二</Checkbox>
                             </Label>
                         </View>
 
-                        <View style='margin-top:15rpx;margin-left:30rpx;font-size:28rpx;color:#586C94;'>
+                        <View style='margin-top:15px;margin-left:30px;font-size:28px;color:#586C94;'>
                             <Label onClick={this.handleChange}>点击该label下的文字默认选中第一个checkbox</Label>
                         </View>
                     </View>

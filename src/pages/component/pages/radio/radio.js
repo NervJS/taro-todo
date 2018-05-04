@@ -59,7 +59,7 @@ export default class PageRadio extends Component {
                         </View>
                         <View className="page-section-spacing-reset">
                             <Radio value="选中" checked>选中</Radio>
-                            <Radio style="margin-left: 20rpx" value="未选中">未选中</Radio>
+                            <Radio style="margin-left: 20px" value="未选中">未选中</Radio>
                         </View>
                     </View>
                     <View className="page-section">
