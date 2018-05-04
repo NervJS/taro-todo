@@ -2,13 +2,24 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Image, Navigator } from '@tarojs/components'
 import './index.scss'
 import logo from '../../asset/component/logo.png'
-import '../../asset/component/view.png'
-import '../../asset/component/content.png'
-import '../../asset/component/form.png'
-import '../../asset/component/nav.png'
-import '../../asset/component/media.png'
-import '../../asset/component/map.png'
-import '../../asset/component/canvas.png'
+import viewPng from '../../asset/component/view.png'
+import contentPng from '../../asset/component/content.png'
+import formPng from '../../asset/component/form.png'
+import navPng from '../../asset/component/nav.png'
+import mediaPng from '../../asset/component/media.png'
+import mapPng from '../../asset/component/map.png'
+import canvasPng from '../../asset/component/canvas.png'
+
+const PNGS = {
+  viewPng,
+  contentPng,
+  formPng,
+  navPng,
+  mediaPng,
+  mapPng,
+  canvasPng
+}
+
 export default class Index extends Component {
   config = {
     navigationBarTitleText: '小程序官方组件-Taro版展示'
@@ -110,7 +121,7 @@ export default class Index extends Component {
                   (item.open ? 'kind-list-item-bd-show' : '')
                 item.boxClass =
                   'navigator-box ' + (item.open ? 'navigator-box-show' : '')
-                item.imgSrc = `../../asset/component/${item.id}.png`
+                item.imgSrc = PNGS[`${item.id}Png`]
                 item._pages = item.pages.map(page => {
                   return {
                     page: page,
