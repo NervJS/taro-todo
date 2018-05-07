@@ -29,9 +29,15 @@ export default class About extends Component {
     console.log('about unmount')
   }
 
-  navigate () {
+  navigateTo () {
     Taro.navigateTo({
       url: '/pages/index/index'
+    })
+  }
+
+  navigateBack () {
+    Taro.navigateBack({
+      delta: 1
     })
   }
 
@@ -39,7 +45,8 @@ export default class About extends Component {
     const text = this.state.text
     return (
       <View className='about'>
-        <Button className='navigate_btn' onClick={this.navigate}>跳转</Button>
+        <Button className='navigate_btn' onClick={this.navigateTo}>push</Button>
+        <Button className='navigate_btn' onClick={this.navigateBack}>back</Button>
         <View><Text>{text}</Text></View>
       </View>
     )

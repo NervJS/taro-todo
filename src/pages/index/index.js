@@ -95,17 +95,23 @@ class Index extends Component {
     console.log('index unmount')
   }
 
-  navigate () {
-    console.log(Taro)
+  navigateTo () {
     Taro.navigateTo({
       url: '/pages/about/about'
+    })
+  }
+
+  navigateBack () {
+    Taro.navigateBack({
+      delta: 1
     })
   }
 
   render () {
     return (
       <View className='todo'>
-        <Button className='navigate_btn' onClick={this.navigate}>跳转</Button>
+        <Button className='navigate_btn' onClick={this.navigateTo}>push</Button>
+        <Button className='navigate_btn' onClick={this.navigateBack}>back</Button>
         <Button className='add_btn' onClick={this.props.inc}>+</Button>
         <Button className='dec_btn' onClick={this.props.dec}>-</Button>
         <Button className='dec_btn' onClick={this.props.asyncInc}>async</Button>
