@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Swiper, SwiperItem, Switch, Slider } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './swiper.scss'
@@ -25,19 +25,19 @@ export default class PageView extends Component {
      })
   }
 
-  isAutoPlay() {
+  isAutoPlay = () => {
     this.setState({
       autoplay: !this.state.autoplay
     })
   }
 
-  setInterval (e) {
+  setInterval = (e) => {
     this.setState({
       interval: e.detail.value
     })
   }
 
-  setDuration (e) {
+  setDuration = (e) => {
     this.setState({
       duration: e.detail.value
     })
@@ -87,7 +87,7 @@ export default class PageView extends Component {
               <Text>幻灯片切换时长(ms)</Text>
             </View>
             <View className="page-section-spacing-reset">
-              <Slider step="1" value="50" showValue  min="500" max="2000" onChange={this.setDuration}/>
+              <Slider step={1} value={50} showValue  min={500} max={2000} onChange={this.setDuration}/>
             </View>
           </View>
           <View className="page-section">
@@ -95,7 +95,7 @@ export default class PageView extends Component {
               <Text>自动播放间隔时长(ms)</Text>
             </View>
             <View className="page-section-spacing-reset">
-              <Slider step="1" value="100" showValue min="2000" max="10000" onChange={this.setInterval}
+              <Slider step={1} value={100} showValue min={2000} max={10000} onChange={this.setInterval}
                       />
             </View>
           </View>

@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 
 // RadioGroup
-import { View, Text, Radio } from '@tarojs/components'
+import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './radio.scss'

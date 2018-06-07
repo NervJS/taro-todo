@@ -2,62 +2,66 @@
 # yarn lockfile v1
 
 
-"@tarojs/async-await@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.29.tgz#aa7b99ca8862ab807d806c08a324b0ea67189140"
+"@tarojs/async-await@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/async-await/-/async-await-0.0.38.tgz#985c6b8fba263d2794f59ac73ed58afea6cf4736"
   dependencies:
     promise-polyfill "^7.1.2"
     regenerator-runtime "^0.11.1"
 
-"@tarojs/components@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.29.tgz#74f690f90368e4d3bc0dee8e16797c75e392c128"
+"@tarojs/components@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/components/-/components-0.0.38.tgz#ed0b88fd6af733a45a8fd24b5e0395271f5f9433"
   dependencies:
+    "@types/react" "^16.3.16"
     classnames "^2.2.5"
-    lodash "^4.17.5"
     nervjs "^1.2.16"
     omit.js "^1.0.0"
+    react "16.3.0"
     weui "^1.1.2"
 
-"@tarojs/plugin-babel@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.29.tgz#588e7987f7b5b715799b387690c9c459419b122b"
+"@tarojs/plugin-babel@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-babel/-/plugin-babel-0.0.38.tgz#cb1363f41281fd36ed6707b36e924de2a9813b4d"
   dependencies:
     babel-core "^6.26.0"
 
-"@tarojs/plugin-sass@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.29.tgz#51e6963164aec2fb07ff9a2ceca41ef249f8a25d"
+"@tarojs/plugin-sass@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/plugin-sass/-/plugin-sass-0.0.38.tgz#62b0124e259ab5099f85b24b10220ff0d2e25262"
   dependencies:
     node-sass "^4.8.3"
 
-"@tarojs/redux@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.29.tgz#8385ed068c26633f9025d609d8316986d334abc0"
+"@tarojs/redux@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/redux/-/redux-0.0.38.tgz#cde5c9c7d2ecf886d782de0b862502b3a122b2b6"
 
-"@tarojs/router@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.29.tgz#013e5d2ea308b46da8fe3954de197a641e7b1c17"
+"@tarojs/router@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/router/-/router-0.0.38.tgz#73fb85e7e189952d6140a9cd029c4162fdef4f95"
 
-"@tarojs/taro-h5@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/taro-h5/-/taro-h5-0.0.29.tgz#de0e097852f2783a3b9b1a95afdb5695dc867184"
+"@tarojs/taro-h5@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/taro-h5/-/taro-h5-0.0.38.tgz#42aa59fcfa64471af03076de56755d0bede8f307"
   dependencies:
-    "@tarojs/taro" "0.0.29"
+    "@tarojs/taro" "0.0.38"
+    jsonp-retry "^1.0.3"
+    nervjs "^1.2.18"
 
-"@tarojs/taro-weapp@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/taro-weapp/-/taro-weapp-0.0.29.tgz#324ccb8a6f9ce60a80a1ff8d5a34e4af12e5ca30"
+"@tarojs/taro-weapp@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/taro-weapp/-/taro-weapp-0.0.38.tgz#e88719f441a596c0802c3f16cad8cb6b269ee324"
   dependencies:
-    "@tarojs/taro" "0.0.29"
+    "@tarojs/taro" "0.0.38"
+    prop-types "^15.6.1"
 
-"@tarojs/taro@0.0.29", "@tarojs/taro@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.29.tgz#99a5f45a03a7471a8a4c955def1dda5ee89296ce"
+"@tarojs/taro@0.0.38", "@tarojs/taro@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/taro/-/taro-0.0.38.tgz#deb91d2c050c66812b5981c009bea731310df1b5"
 
-"@tarojs/webpack-runner@^0.0.29":
-  version "0.0.29"
-  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.29.tgz#351d2a4bbc1fc6a8c338a7116dd860d7b79097b2"
+"@tarojs/webpack-runner@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.npmjs.org/@tarojs/webpack-runner/-/webpack-runner-0.0.38.tgz#4eb87de89713ddb9f79550b644e525ddfccdef18"
   dependencies:
     autoprefixer "^8.2.0"
     babel-core "^6.26.0"
@@ -84,6 +88,12 @@
     webpack "^3.11.0"
     webpack-dev-server "^2.11.2"
     webpack-merge "^4.1.2"
+
+"@types/react@^16.3.16":
+  version "16.3.16"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.3.16.tgz#78fc44a90b45701f50c8a7008f733680ba51fc86"
+  dependencies:
+    csstype "^2.2.0"
 
 abbrev@1:
   version "1.1.1"
@@ -255,6 +265,10 @@ array-unique@^0.2.1:
 array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
+
+asap@~2.0.3:
+  version "2.0.6"
+  resolved "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
 asn1.js@^4.0.0:
   version "4.10.1"
@@ -1491,6 +1505,10 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
+core-js@^1.0.0:
+  version "1.2.7"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.5.tgz#b14dde936c640c0579a6b50cabcc132dd6127e3b"
@@ -1672,6 +1690,10 @@ csso@~2.3.1:
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
+
+csstype@^2.2.0:
+  version "2.5.3"
+  resolved "https://registry.npmjs.org/csstype/-/csstype-2.5.3.tgz#2504152e6e1cc59b32098b7f5d6a63f16294c1f7"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -1926,6 +1948,12 @@ emojis-list@^2.0.0:
 encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+
+encoding@^0.1.11:
+  version "0.1.12"
+  resolved "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  dependencies:
+    iconv-lite "~0.4.13"
 
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.1"
@@ -2247,6 +2275,18 @@ faye-websocket@~0.11.0:
   resolved "https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.11.1.tgz#f0efe18c4f56e4f40afc7e06c719fd5ee6188f38"
   dependencies:
     websocket-driver ">=0.5.1"
+
+fbjs@^0.8.16:
+  version "0.8.16"
+  resolved "https://registry.npmjs.org/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.9"
 
 file-loader@^1.1.11:
   version "1.1.11"
@@ -2828,6 +2868,12 @@ iconv-lite@0.4.19:
   version "0.4.19"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
+iconv-lite@~0.4.13:
+  version "0.4.23"
+  resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.23.tgz#297871f63be507adcfbfca715d0cd0eed84e9a63"
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
+
 icss-replace-symbols@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/icss-replace-symbols/-/icss-replace-symbols-1.1.0.tgz#06ea6f83679a7749e386cfe1fe812ae5db223ded"
@@ -3140,9 +3186,9 @@ is-regex@^1.0.4:
   dependencies:
     has "^1.0.1"
 
-is-stream@^1.1.0:
+is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  resolved "https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
 is-svg@^2.0.0:
   version "2.1.0"
@@ -3191,6 +3237,13 @@ isobject@^2.0.0:
 isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+
+isomorphic-fetch@^2.1.1:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  dependencies:
+    node-fetch "^1.0.1"
+    whatwg-fetch ">=0.10.0"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -3263,6 +3316,12 @@ json5@^0.5.0, json5@^0.5.1:
 jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+
+jsonp-retry@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/jsonp-retry/-/jsonp-retry-1.0.3.tgz#9e6b18b02ec767a621dd44b4e99439a8a43a6419"
+  dependencies:
+    object-assign "^4.1.1"
 
 jsonpointer@^4.0.0:
   version "4.0.1"
@@ -3412,7 +3471,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -3711,6 +3770,13 @@ nervjs@^1.2.16:
     nerv-shared "1.2.15"
     nerv-utils "1.2.15"
 
+nervjs@^1.2.18:
+  version "1.2.18"
+  resolved "https://registry.npmjs.org/nervjs/-/nervjs-1.2.18.tgz#d1b9c394338cf938f11fabcd3f3f469de0dd139b"
+  dependencies:
+    nerv-shared "1.2.15"
+    nerv-utils "1.2.15"
+
 next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
@@ -3720,6 +3786,13 @@ no-case@^2.2.0:
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
   dependencies:
     lower-case "^1.1.1"
+
+node-fetch@^1.0.1:
+  version "1.7.3"
+  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
+  dependencies:
+    encoding "^0.1.11"
+    is-stream "^1.0.1"
 
 node-forge@0.7.1:
   version "0.7.1"
@@ -4511,6 +4584,20 @@ promise-polyfill@^7.1.2:
   version "7.1.2"
   resolved "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-7.1.2.tgz#ab05301d8c28536301622d69227632269a70ca3b"
 
+promise@^7.1.1:
+  version "7.3.1"
+  resolved "https://registry.npmjs.org/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
+  dependencies:
+    asap "~2.0.3"
+
+prop-types@^15.6.0, prop-types@^15.6.1:
+  version "15.6.1"
+  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 proxy-addr@~2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.3.tgz#355f262505a621646b3130a728eb647e22055341"
@@ -4643,6 +4730,15 @@ rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react@16.3.0:
+  version "16.3.0"
+  resolved "https://registry.npmjs.org/react/-/react-16.3.0.tgz#fc5a01c68f91e9b38e92cf83f7b795ebdca8ddff"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -4993,6 +5089,10 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
+"safer-buffer@>= 2.1.2 < 3":
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+
 sass-graph@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/sass-graph/-/sass-graph-2.2.4.tgz#13fbd63cd1caf0908b9fd93476ad43a51d1e0b49"
@@ -5123,9 +5223,9 @@ set-value@^2.0.0:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-setimmediate@^1.0.4:
+setimmediate@^1.0.4, setimmediate@^1.0.5:
   version "1.0.5"
-  resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
+  resolved "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
 
 setprototypeof@1.0.3:
   version "1.0.3"
@@ -5646,6 +5746,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
+ua-parser-js@^0.7.9:
+  version "0.7.18"
+  resolved "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
+
 uglify-es@^3.3.4:
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
@@ -5975,6 +6079,10 @@ websocket-extensions@>=0.1.1:
 weui@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/weui/-/weui-1.1.2.tgz#e33f771e2248edfe0fd07a2c6eadb3e7931a00cc"
+
+whatwg-fetch@>=0.10.0:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
 
 whet.extend@~0.9.9:
   version "0.9.9"

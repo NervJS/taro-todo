@@ -24,7 +24,7 @@ export default class PageSlider extends Component {
                             <Text>设置step</Text>
                         </View>
                         <View className="page-section-spacing-reset">
-                            <Slider step="1" value="50" />
+                            <Slider step={1} value={50} />
                         </View>
                     </View>
                     <View className="page-section">
@@ -32,7 +32,7 @@ export default class PageSlider extends Component {
                             <Text>显示当前value</Text>
                         </View>
                         <View className="page-section-spacing-reset">
-                            <Slider step="1" value="50" showValue />
+                            <Slider step={1} value={50} showValue />
                         </View>
                     </View>
                     <View className="page-section">
@@ -40,7 +40,7 @@ export default class PageSlider extends Component {
                             <Text>设置最小/最大值</Text>
                         </View>
                         <View className="page-section-spacing-reset">
-                            <Slider step="1" value="100" showValue min="50" max="200"/>
+                            <Slider step={1} value={100} showValue min={50} max={200}/>
                         </View>
                     </View>
                 </View>

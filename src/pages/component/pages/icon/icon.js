@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Icon } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './icon.scss'

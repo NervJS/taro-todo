@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './text.scss'
@@ -39,13 +39,13 @@ export default class PageView extends Component {
         <Head title="text"/>
         <View className="page-body">
           <View className="page-section">
-            <view className="text_content">
+            <View className="text_content">
               {this.contents.map(item => {
                 return (
                   <Text>{item.text}</Text>
                 )
               })}
-            </view>
+            </View>
           </View>
           <View className="page-section">
             <View className="flex-wrp" style="flex-direction:column;">

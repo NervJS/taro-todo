@@ -3,7 +3,7 @@ import { View, Image } from '@tarojs/components'
 // bug
 import icon_foot from '../../asset/common/icon_foot.png'
 console.log(icon_foot)
-// import '../../asset/common/icon_foot.png'
+import footImage from '../../asset/common/icon_foot.png'
 export default class Foot extends Component {
   render() {
     return (
@@ -14,7 +14,7 @@ export default class Foot extends Component {
       >
         <Image
           className="icon-foot"
-          src="../../../../asset/common/icon_foot.png"
+          src={footImage}
         />
       </navigator>
     )

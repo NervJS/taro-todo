@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 
 //RadioGroup
-import { View, Text, Checkbox, Label, Radio } from '@tarojs/components'
+import { View, Text, Checkbox, Label, Radio, RadioGroup } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 

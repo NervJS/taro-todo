@@ -100,6 +100,13 @@ export default class Index extends Component {
       list: list
     })
   }
+
+  goToComponent = (page, e) => {
+    Taro.navigateTo({
+      url: page.url
+    })
+  }
+
   render() {
     return (
       <View className="index">
@@ -145,12 +152,12 @@ export default class Index extends Component {
                       <View className={item.boxClass}>
                         {item._pages.map(page => {
                           return (
-                            <navigator url={page.url} className="navigator">
+                            <View onClick={this.goToComponent.bind(this, page)} className="navigator">
                               <View className="navigator-text">
                                 {page.page}
                               </View>
                               <View className="navigator-arrow" />
-                            </navigator>
+                            </View>
                           )
                         })}
                       </View>

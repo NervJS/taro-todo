@@ -1,7 +1,19 @@
 import Taro, { Component } from '@tarojs/taro'
 
 // RadioGroup ,Form ,CheckboxGroup
-import { View, Text, Label, Radio, Checkbox, Slider, Input, Button } from '@tarojs/components'
+import {
+  View,
+  Text,
+  Label,
+  Radio,
+  Checkbox,
+  Slider,
+  Input,
+  Button,
+  RadioGroup,
+  Form,
+  CheckboxGroup,
+  Switch } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 
@@ -131,7 +143,7 @@ export default class PageForm extends Component {
                                 <Text>input</Text>
                             </View>
                             <View className="page-section-spacing-reset" style="background:#fff;padding:15px 30px;">
-                                <Input name='input' type='text' placeholder='这是一个输入框' onChange={this.onHandleChange} />
+                                <Input name='input' type='text' placeholder={'这是一个输入框'} onChange={this.onHandleChange} />
                             </View>
                         </View>
                         <View className="page-section">
