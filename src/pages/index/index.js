@@ -73,16 +73,7 @@ class Index extends Component {
   xxhanlder = () => {
     console.log('sdsddssd')
   }
-
-  // componentDidMount () {
-  //   console.log('index mount')
-  //   console.log(diao())
-  //   if (process.env.NODE_ENV === 'development') {
-  //     console.log('development')
-  //   }
-  //   console.log(WWW)
-  // }
-
+  
   componentDidShow () {
     console.log('index show')
   }

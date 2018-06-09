@@ -1,14 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
-import { Provider } from '@tarojs/redux'
-import '@tarojs/async-await'
-
 import Index from './pages/index/index'
-
-import configStore from './store'
-
 import './app.scss'
-
-const store = configStore()
 
 class App extends Component {
   config = {
@@ -38,9 +30,9 @@ class App extends Component {
       'pages/component/pages/navigator/navigator',
       'pages/component/pages/redirectPage/redirectPage',
       'pages/component/pages/navigatePage/navigatePage',
-      'pages/index/index',
-      'pages/hello/hello',
-      'pages/about/about'
+      // 'pages/index/index',
+      // 'pages/hello/hello',
+      // 'pages/about/about'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -60,9 +52,7 @@ class App extends Component {
 
   render () {
     return (
-      <Provider store={store}>
-        <Index />
-      </Provider>
+      <Index />
     )
   }
 }

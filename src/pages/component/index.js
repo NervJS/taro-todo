@@ -139,7 +139,7 @@ export default class Index extends Component {
               })
               .map((item, index) => {
                 return (
-                  <View className="kind-list-item">
+                  <View className="kind-list-item" key={index}>
                     <View
                       id={item.id}
                       className={item.hdClass}
@@ -150,9 +150,9 @@ export default class Index extends Component {
                     </View>
                     <View className={item.bdClass}>
                       <View className={item.boxClass}>
-                        {item._pages.map(page => {
+                        {item._pages.map((page, index) => {
                           return (
-                            <View onClick={this.goToComponent.bind(this, page)} className="navigator">
+                            <View onClick={this.goToComponent.bind(this, page)} key={index} className="navigator">
                               <View className="navigator-text">
                                 {page.page}
                               </View>
