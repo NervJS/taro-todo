@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Button } from '@tarojs/components'
-
+import './about.scss'
 export default class About extends Component {
   config = {
     navigationBarTitleText: 'about'
@@ -9,7 +9,7 @@ export default class About extends Component {
   constructor () {
     super(...arguments)
     this.state = {
-      text: 'about'
+      text: 'about~'
     }
   }
 
@@ -29,25 +29,12 @@ export default class About extends Component {
     console.log('about unmount')
   }
 
-  navigateTo () {
-    Taro.navigateTo({
-      url: '/pages/index/index'
-    })
-  }
-
-  navigateBack () {
-    Taro.navigateBack({
-      delta: 1
-    })
-  }
-
   render () {
     const text = this.state.text
     return (
       <View className='about'>
-        <Button className='navigate_btn' onClick={this.navigateTo}>push</Button>
-        <Button className='navigate_btn' onClick={this.navigateBack}>back</Button>
         <View><Text>{text}</Text></View>
+        <View className='about__float'>距离底部50px</View>
       </View>
     )
   }

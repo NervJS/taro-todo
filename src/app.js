@@ -32,13 +32,30 @@ class App extends Component {
       'pages/component/pages/navigatePage/navigatePage',
       // 'pages/index/index',
       // 'pages/hello/hello',
-      // 'pages/about/about'
+      'pages/about/about'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'TODO List',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      backgroundColor: '#fff',
+      selectedColor: '#dc0032',
+      list: [
+        {
+        pagePath: 'pages/component/index',
+        text: '组件',
+        iconPath: 'asset/component/view.png',
+        selectedIconPath: 'asset/component/view-red.png'
+      },
+      {
+        pagePath: 'pages/about/about',
+        text: '关于',
+        iconPath: 'asset/component/nav.png',
+        selectedIconPath: 'asset/component/nav-red.png'
+      }]
     }
   }
 

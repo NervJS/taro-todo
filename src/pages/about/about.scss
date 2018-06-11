@@ -1,0 +1,12 @@
+.about {
+  text-align: center;
+  margin-top: 150px;
+  &__float {
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 14PX;
+    position: fixed;
+    right: 0;
+    bottom: 50PX;
+    margin-bottom: taro-tabbar-height;
+  }
+}
