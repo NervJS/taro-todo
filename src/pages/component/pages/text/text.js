@@ -19,7 +19,6 @@ export default class PageView extends Component {
   add = e => {
     const cot = this.contents
     cot.push({text: 'hello world'})
-
     this.setState(() => {
       return {contents: cot}
     })
@@ -40,7 +39,7 @@ export default class PageView extends Component {
         <View className="page-body">
           <View className="page-section">
             <View className="text_content">
-              {this.contents.map(item => {
+              {this.state.contents.map(item => {
                 return (
                   <Text>{item.text}</Text>
                 )
