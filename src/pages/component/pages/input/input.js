@@ -58,14 +58,14 @@ export default class PageInput extends Component {
                             <Input type='number' placeholder={'这是一个数字输入框'} />
                         </View>
                     </View>
-                    {/* <View className="page-section">
+                    <View className="page-section">
                         <View className="page-section-title">
                             <Text>密码输入的input</Text>
                         </View>
                         <View className="page-section-spacing-reset" style="background:#fff;padding:15px 30px;">
-                            <Input type='password' placeholder='这是一个密码输入框' />
+                            <Input type='password' password placeholder='这是一个密码输入框' />
                         </View>
-                    </View> */}
+                    </View>
                     <View className="page-section">
                         <View className="page-section-title">
                             <Text>带小数点的input</Text>
