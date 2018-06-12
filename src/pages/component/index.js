@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Image, Navigator } from '@tarojs/components'
+import { View, Image } from '@tarojs/components'
 import './index.scss'
 import logo from '../../asset/component/logo.png'
 import viewPng from '../../asset/component/view.png'
