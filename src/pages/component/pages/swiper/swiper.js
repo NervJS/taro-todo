@@ -19,7 +19,7 @@ export default class PageView extends Component {
     }
   }
 
-   hideIndication (e) {
+   hideIndication = (e) => {
      this.setState({
        indicatorDots: !this.state.indicatorDots
      })
