@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Checkbox, Label } from '@tarojs/components'
+import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 import Head from '../../../../components/head/head'
 import Foot from '../../../../components/foot/foot'
 import './checkbox.scss'
@@ -46,6 +46,9 @@ export default class PageCheckbox extends Component {
             }
         ]
     }
+    checkboxChange = e =>{
+        console.log(e);
+    }
     render() {
         return (
             <View className="container">
@@ -66,13 +69,15 @@ export default class PageCheckbox extends Component {
                         </View>
                         <View>
                             <View className="checkbox-list">
-                                {this.state.list.map((item, i) => {
-                                    return (
-                                        <Label className="checkbox-list__label" for={i} key={i}>
-                                            <Checkbox className="checkbox-list__checkbox" value={item.value} checked={item.checked}>{item.text}</Checkbox>
-                                        </Label>
-                                    )
-                                })}
+                                <CheckboxGroup name='checkbox' onChange={this.checkboxChange}>
+                                    {this.state.list.map(item => {
+                                        return (
+                                            <Label className="checkbox-list__label" for={item.value} key={item.value}>
+                                                <Checkbox className="checkbox-list__checkbox" value={item.value} checked={item.checked}>{item.text}</Checkbox>
+                                            </Label>
+                                        )
+                                    })}
+                                </CheckboxGroup>
                             </View>
                         </View>
                     </View>

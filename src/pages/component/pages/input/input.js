@@ -63,7 +63,7 @@ export default class PageInput extends Component {
                             <Text>密码输入的input</Text>
                         </View>
                         <View className="page-section-spacing-reset" style="background:#fff;padding:15px 30px;">
-                            <Input type='password' password placeholder='这是一个密码输入框' />
+                            <Input type='password' password placeholder={'这是一个密码输入框'} />
                         </View>
                     </View>
                     <View className="page-section">

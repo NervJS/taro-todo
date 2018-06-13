@@ -48,6 +48,11 @@ export default class PageRadio extends Component {
             }
         ]
     }
+
+    radioChange = e =>{
+        console.log(e);
+    }
+
     render() {
         return (
             <View className="container">
@@ -68,11 +73,11 @@ export default class PageRadio extends Component {
                         </View>
                         <View>
                             <View className="radio-list">
-                                <RadioGroup>
+                                <RadioGroup onChange={this.radioChange}>
                                     {this.state.list.map((item, i) => {
                                         return (
                                             <Label className="radio-list__label" for={i} key={i}>
-                                                <Radio className="radio-list__radio" value={item.value} checked={item.checked}>{item.text}</Radio>
+                                                <Radio name='radio' value={item.value} checked={item.checked}>{item.text}</Radio>
                                             </Label>
                                         )
                                     })}
