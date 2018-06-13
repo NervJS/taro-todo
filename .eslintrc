@@ -1,0 +1,32 @@
+{
+  "extends": ["standard", "standard-jsx"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "wx": true,
+    "getApp": true,
+    "getCurrentPages": true
+  },
+  "rules": {
+    "no-unused-expressions": 0,
+    "no-useless-constructor": 0,
+    "react/self-closing-comp": "off",
+    "react/jsx-closing-bracket-location": [
+      "error",
+      {
+        "nonEmpty": "after-props",
+        "selfClosing": "after-props"
+      }
+    ]
+  }
+}

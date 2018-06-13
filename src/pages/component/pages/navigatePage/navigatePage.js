@@ -1,7 +1,5 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Switch } from '@tarojs/components'
-import Head from '../../../../components/head/head'
-import Foot from '../../../../components/foot/foot'
+import { Component } from '@tarojs/taro'
+import { View } from '@tarojs/components'
 
 export default class PageSwitch extends Component {
   config = {
@@ -15,11 +13,6 @@ export default class PageSwitch extends Component {
   state = {}
 
   render () {
-    return (
-      <View className="container">
-        <Head title="新建的页面"/>
-        <Foot/>
-      </View>
-    )
+    return <View className='container' ></View>
   }
 }

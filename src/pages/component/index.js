@@ -1,6 +1,7 @@
+import './index.scss'
+
 import Taro, { Component } from '@tarojs/taro'
 import { View, Image } from '@tarojs/components'
-import './index.scss'
 import logo from '../../asset/component/logo.png'
 import viewPng from '../../asset/component/view.png'
 import contentPng from '../../asset/component/content.png'
@@ -25,7 +26,7 @@ export default class Index extends Component {
     navigationBarTitleText: '小程序官方组件-Taro版展示'
   }
 
-  constructor() {
+  constructor () {
     super(...arguments)
     this.state = {
       list: [
@@ -86,7 +87,7 @@ export default class Index extends Component {
     //   item.icon = require(`../../asset/component/${item.id}.png`)
     // })
   }
-  kindToggle = (e) => {
+  kindToggle = e => {
     var id = e.currentTarget.id,
       list = this.state.list
     for (var i = 0, len = list.length; i < len; ++i) {
@@ -107,17 +108,17 @@ export default class Index extends Component {
     })
   }
 
-  render() {
+  render () {
     return (
-      <View className="index">
-        <View className="index-hd">
-          <Image className="index-logo" src={logo} />
-          <View className="index-desc">
+      <View className='index'>
+        <View className='index-hd'>
+          <Image className='index-logo' src={logo} />
+          <View className='index-desc'>
             以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。
           </View>
         </View>
-        <View className="index-bd">
-          <View className="kind-list">
+        <View className='index-bd'>
+          <View className='kind-list'>
             {this.state.list
               .map((item, index) => {
                 item.hdClass =
@@ -139,24 +140,26 @@ export default class Index extends Component {
               })
               .map((item, index) => {
                 return (
-                  <View className="kind-list-item" key={index}>
+                  <View className='kind-list-item' key={index}>
                     <View
                       id={item.id}
                       className={item.hdClass}
-                      onClick={this.kindToggle}
-                    >
-                      <View className="kind-list-text">{item.name}</View>
-                      <Image className="kind-list-img" src={item.imgSrc} />
+                      onClick={this.kindToggle}>
+                      <View className='kind-list-text'>{item.name}</View>
+                      <Image className='kind-list-img' src={item.imgSrc} />
                     </View>
                     <View className={item.bdClass}>
                       <View className={item.boxClass}>
                         {item._pages.map((page, index) => {
                           return (
-                            <View onClick={this.goToComponent.bind(this, page)} key={index} className="navigator">
-                              <View className="navigator-text">
+                            <View
+                              onClick={this.goToComponent.bind(this, page)}
+                              key={index}
+                              className='navigator'>
+                              <View className='navigator-text'>
                                 {page.page}
                               </View>
-                              <View className="navigator-arrow" />
+                              <View className='navigator-arrow' />
                             </View>
                           )
                         })}

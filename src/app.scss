@@ -49,6 +49,7 @@ form {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  padding-top: 100px;
   justify-content: space-between;
   font-size: 32px;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
@@ -126,6 +127,7 @@ form {
 
 .page-section {
   width: 100%;
+  text-align: center;
   margin-bottom: 60px;
 }
 .page-section_center {
