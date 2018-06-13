@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Button } from '@tarojs/components'
+import { View, Text, Button, Map } from '@tarojs/components'
+import Test from '../../components/test/test.js'
 import './about.scss'
 export default class About extends Component {
   config = {
@@ -29,11 +30,20 @@ export default class About extends Component {
     console.log('about unmount')
   }
 
+  onClick = () => {
+    console.log('click')
+  }
+
+  handleClick = () => {
+    console.log(this, 'click in about')
+  }
+
   render () {
     const text = this.state.text
     return (
       <View className='about'>
-        <View><Text>{text}</Text></View>
+        <View onClick={this.handleClick}><Text>{text}</Text></View>
+        <Test onClick={this.onClick}/>
         <View className='about__float'>距离底部50px</View>
       </View>
     )
