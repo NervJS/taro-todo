@@ -139,7 +139,7 @@ export default class PageForm extends Component {
                   value={this.state.sliderValue}
                   showValue
                   onChange={this.handleSliderChange}
-                  bingchanging={this.handleSliderChanging} />
+                  bingchanging={this.handleSliderChanging} ></Slider>
               </View>
             </View>
             <View className='page-section'>
@@ -153,7 +153,7 @@ export default class PageForm extends Component {
                   name='input'
                   type='text'
                   placeholder={'这是一个输入框'}
-                  onChange={this.onHandleChange} />
+                  onChange={this.onHandleChange} ></Input>
               </View>
             </View>
             <View className='page-section'>

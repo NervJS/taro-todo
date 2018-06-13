@@ -21,7 +21,7 @@ export default class PageTextarea extends Component {
             <View>
               <Textarea
                 style='background:#fff;width:100%;min-height:80px;padding:0 30px;'
-                autoHeight />
+                autoHeight ></Textarea>
             </View>
           </View>
           <View className='page-section'>
@@ -31,7 +31,7 @@ export default class PageTextarea extends Component {
             <View>
               <Textarea
                 style='background:#fff;width:100%;height:80px;padding:0 30px;'
-                autoFocus />
+                autoFocus ></Textarea>
             </View>
           </View>
         </View>

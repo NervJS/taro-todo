@@ -43,7 +43,7 @@ export default class PageInput extends Component {
               <Input
                 type='text'
                 placeholder={'最大输入长度为10'}
-                maxlength='10' />
+                maxlength='10' ></Input>
             </View>
           </View>
           <View className='page-section'>
@@ -57,7 +57,7 @@ export default class PageInput extends Component {
                 type='text'
                 placeholder={'输入同步到view中'}
                 value={this.state.value}
-                onInput={this.onInput} />
+                onInput={this.onInput} ></Input>
             </View>
           </View>
           <View className='page-section'>
@@ -80,7 +80,7 @@ export default class PageInput extends Component {
               <Input
                 type='password'
                 password
-                placeholder={'这是一个密码输入框'} />
+                placeholder={'这是一个密码输入框'} ></Input>
             </View>
           </View>
           <View className='page-section'>
@@ -113,7 +113,7 @@ export default class PageInput extends Component {
               <Input
                 type='text'
                 placeholder={'占位符字体是红色的'}
-                placeholderStyle='color:red' />
+                placeholderStyle='color:red' ></Input>
             </View>
           </View>
         </View>

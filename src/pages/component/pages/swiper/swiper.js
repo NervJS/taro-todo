@@ -107,7 +107,7 @@ export default class PageView extends Component {
                 showValue
                 min={500}
                 max={2000}
-                onChange={this.setDuration} />
+                onChange={this.setDuration} ></Slider>
             </View>
           </View>
           <View className='page-section'>
@@ -121,7 +121,7 @@ export default class PageView extends Component {
                 showValue
                 min={2000}
                 max={10000}
-                onChange={this.setInterval} />
+                onChange={this.setInterval} ></Slider>
             </View>
           </View>
         </View>
