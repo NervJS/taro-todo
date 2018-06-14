@@ -2,6 +2,8 @@ import './audio.scss'
 
 import { Component } from '@tarojs/taro'
 import { View, Audio } from '@tarojs/components'
+
+import Header from '../../../../components/head/head'
 export default class PageView extends Component {
   constructor () {
     super(...arguments)
@@ -9,6 +11,7 @@ export default class PageView extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Audio'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-spacing'>
@@ -19,7 +22,7 @@ export default class PageView extends Component {
                 loop={false}
                 muted
                 initialTime='30'
-                id='video' />
+                id='video' ></Audio>
             </View>
           </View>
         </View>

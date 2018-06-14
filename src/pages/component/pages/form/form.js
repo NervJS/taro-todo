@@ -16,10 +16,9 @@ import {
   Switch
 } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageForm extends Component {
-  config = {
-    navigationBarTitleText: 'Form'
-  }
   constructor () {
     super(...arguments)
   }
@@ -83,6 +82,7 @@ export default class PageForm extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='form'></Header>
         <View className='page-body'>
           <Form onSubmit={this.formSubmit} onReset={this.formReset}>
             <View className='page-section'>

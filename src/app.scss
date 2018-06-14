@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+
 }
 
 .navigate_btn {
@@ -44,12 +45,17 @@ form {
   text-align: center;
 }
 
+.taro_page{
+  min-height: 100%;
+  background-color: #f8f8f8;
+}
+
 /* page */
 .container {
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
   min-height: 100%;
-  padding-top: 100px;
   justify-content: space-between;
   font-size: 32px;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;

@@ -10,14 +10,16 @@ import {
   Slider
 } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageView extends Component {
   constructor () {
     super(...arguments)
     this.state = {
       autoplay: false,
       indicatorDots: true,
-      interval: '5000',
-      duration: '500'
+      interval: 0,
+      duration: 0
     }
   }
 
@@ -34,12 +36,14 @@ export default class PageView extends Component {
   }
 
   setInterval = e => {
+    console.log(e)
     this.setState({
       interval: e.detail.value
     })
   }
 
   setDuration = e => {
+    console.log(e)
     this.setState({
       duration: e.detail.value
     })
@@ -48,6 +52,7 @@ export default class PageView extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Swiper'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <Swiper
@@ -102,11 +107,11 @@ export default class PageView extends Component {
             </View>
             <View className='page-section-spacing-reset'>
               <Slider
-                step={1}
-                value={50}
                 showValue
+                step={1}
                 min={500}
                 max={2000}
+                value={this.state.interval}
                 onChange={this.setDuration} ></Slider>
             </View>
           </View>
@@ -116,11 +121,11 @@ export default class PageView extends Component {
             </View>
             <View className='page-section-spacing-reset'>
               <Slider
-                step={1}
-                value={100}
                 showValue
+                step={1}
                 min={2000}
                 max={10000}
+                value={this.state.interval}
                 onChange={this.setInterval} ></Slider>
             </View>
           </View>

@@ -3,6 +3,8 @@ import './button.scss'
 import { Component } from '@tarojs/taro'
 import { View, Button } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageButton extends Component {
   constructor () {
     super(...arguments)
@@ -54,6 +56,7 @@ export default class PageButton extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Button'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-spacing-reset'>

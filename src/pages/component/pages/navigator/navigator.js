@@ -3,11 +3,9 @@ import './navigator.scss'
 import { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 
-export default class PageSwitch extends Component {
-  config = {
-    navigationBarTitleText: 'Navigator'
-  }
+import Header from '../../../../components/head/head'
 
+export default class PageSwitch extends Component {
   constructor () {
     super(...arguments)
   }
@@ -17,6 +15,7 @@ export default class PageSwitch extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Navigator'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <navigator

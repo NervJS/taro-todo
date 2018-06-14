@@ -3,16 +3,17 @@ import './view.scss'
 import { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageView extends Component {
-  config = {
-    navigationBarTitleText: 'View'
-  }
   constructor () {
     super(...arguments)
   }
+
   render () {
     return (
       <View className='container'>
+        <Header title='View'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

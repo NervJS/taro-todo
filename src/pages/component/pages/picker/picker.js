@@ -2,6 +2,9 @@ import './picker.scss'
 
 import { Component } from '@tarojs/taro'
 import { View, Text, Picker } from '@tarojs/components'
+
+import Header from '../../../../components/head/head'
+
 export default class PagePicker extends Component {
   constructor () {
     super(...arguments)
@@ -34,6 +37,7 @@ export default class PagePicker extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Picker'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

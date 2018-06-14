@@ -2,10 +2,10 @@ import './radio.scss'
 
 import { Component } from '@tarojs/taro'
 import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
+
+import Header from '../../../../components/head/head'
+
 export default class PageRadio extends Component {
-  config = {
-    navigationBarTitleText: 'Radio'
-  }
   constructor () {
     super(...arguments)
   }
@@ -52,6 +52,7 @@ export default class PageRadio extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Radio'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

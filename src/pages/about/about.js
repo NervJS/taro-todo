@@ -1,6 +1,7 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Button } from '@tarojs/components'
 import './about.scss'
+
+import { Component } from '@tarojs/taro'
+import { View, Text } from '@tarojs/components'
 export default class About extends Component {
   config = {
     navigationBarTitleText: 'about'
@@ -9,7 +10,7 @@ export default class About extends Component {
   constructor () {
     super(...arguments)
     this.state = {
-      text: 'about~'
+      text: 'About'
     }
   }
 
@@ -34,9 +35,7 @@ export default class About extends Component {
     return (
       <View className='about'>
         <View><Text>{text}</Text></View>
-        <View className='about__float'>距离底部50px</View>
       </View>
     )
   }
 }
-

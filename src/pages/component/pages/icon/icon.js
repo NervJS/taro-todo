@@ -3,16 +3,16 @@ import './icon.scss'
 import { Component } from '@tarojs/taro'
 import { View, Icon } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageView extends Component {
-  config = {
-    navigationBarTitleText: 'Icon'
-  }
   constructor () {
     super(...arguments)
   }
   render () {
     return (
       <View className='container'>
+        <Header title='Icon'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-spacing'>

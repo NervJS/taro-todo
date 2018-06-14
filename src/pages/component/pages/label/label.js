@@ -10,6 +10,8 @@ import {
   RadioGroup
 } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageLabel extends Component {
   constructor () {
     super(...arguments)
@@ -29,6 +31,7 @@ export default class PageLabel extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Label'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

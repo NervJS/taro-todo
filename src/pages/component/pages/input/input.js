@@ -1,10 +1,9 @@
 import { Component } from '@tarojs/taro'
 import { View, Text, Input } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageInput extends Component {
-  config = {
-    navigationBarTitleText: 'Input'
-  }
   constructor () {
     super(...arguments)
   }
@@ -22,6 +21,7 @@ export default class PageInput extends Component {
   render () {
     return (
       <View className='container'>
+        <Header class='Input'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

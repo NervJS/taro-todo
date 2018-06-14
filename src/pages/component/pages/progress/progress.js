@@ -3,16 +3,17 @@ import './progress.scss'
 import { Component } from '@tarojs/taro'
 import { View, Progress } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageView extends Component {
-  config = {
-    navigationBarTitleText: 'Progress'
-  }
   constructor () {
     super(...arguments)
   }
+  
   render () {
     return (
       <View className='container'>
+        <Header title='Progress'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-spacing' style='margin-bottom:104px;'>

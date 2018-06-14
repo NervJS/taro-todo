@@ -3,6 +3,8 @@ import './checkbox.scss'
 import { Component } from '@tarojs/taro'
 import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 
+import Header from '../../../../components/head/head'
+
 export default class PageCheckbox extends Component {
   constructor () {
     super(...arguments)
@@ -48,6 +50,7 @@ export default class PageCheckbox extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Checkbox'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

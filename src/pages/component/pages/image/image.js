@@ -5,6 +5,8 @@ import { View, Text, Image } from '@tarojs/components'
 
 import nervLogo from './nerv_logo.png'
 
+import Header from '../../../../components/head/head'
+
 export default class PageView extends Component {
   constructor () {
     super(...arguments)
@@ -13,6 +15,7 @@ export default class PageView extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Image'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

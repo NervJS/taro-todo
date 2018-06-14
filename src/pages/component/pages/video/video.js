@@ -2,11 +2,10 @@ import './video.scss'
 
 import { Component } from '@tarojs/taro'
 import { View, Video } from '@tarojs/components'
-export default class PageView extends Component {
-  config = {
-    navigationBarTitleText: 'video'
-  }
 
+import Header from '../../../../components/head/head'
+
+export default class PageView extends Component {
   constructor () {
     super(...arguments)
   }
@@ -14,6 +13,7 @@ export default class PageView extends Component {
   render () {
     return (
       <View className='container'>
+        <Header title='Video'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-spacing'>
