@@ -18,8 +18,8 @@ export default class PageView extends Component {
     this.state = {
       autoplay: false,
       indicatorDots: true,
-      interval: 0,
-      duration: 0
+      interval: 5000,
+      duration: 500
     }
   }
 

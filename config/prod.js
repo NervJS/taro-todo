@@ -6,6 +6,7 @@ module.exports = {
   },
   weapp: {},
   h5: {
-    publicPath: "./"
+    publicPath: './',
+    path: './taro'
   }
 }
