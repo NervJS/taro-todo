@@ -3,7 +3,9 @@ swiper {
 }
 
 .content {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 300px;
   color: #fff;
 }
@@ -35,6 +37,6 @@ swiper {
     padding-left: 15px;
   }
 }
-.swiper_item {
-  height: 300px;
+.test-h{
+  height: 230px;
 }

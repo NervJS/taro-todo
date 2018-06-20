@@ -19,7 +19,8 @@ export default class PageView extends Component {
       autoplay: false,
       indicatorDots: true,
       interval: 5000,
-      duration: 500
+      duration: 500,
+      current: 0
     }
   }
 
@@ -56,6 +57,7 @@ export default class PageView extends Component {
         <View className='page-body'>
           <View className='page-section'>
             <Swiper
+              className='test-h'
               autoplay={this.state.autoplay}
               indicatorDots={this.state.indicatorDots}
               slideMult='10'
@@ -63,7 +65,7 @@ export default class PageView extends Component {
               interval={this.state.interval}
               indicatorColor='#999'
               indicatorActiveColor='#333'
-              current='0'
+              current={this.state.current}
               circular
               preMargin='20'>
               <SwiperItem>
