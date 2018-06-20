@@ -9,7 +9,7 @@ export default class PageView extends Component {
   constructor () {
     super(...arguments)
   }
-  
+
   render () {
     return (
       <View className='container'>
@@ -21,11 +21,11 @@ export default class PageView extends Component {
             </View>
             <ScrollView
               className='scrollview'
-              scroll-y
-              scroll-with-animation
-              scroll-top='0'
+              scrollY
+              scrollWithAnimation
+              scrollTop='0'
               style='height: 150px;'
-              lower-threshold='20'
+              lowerThreshold='20'
               upperThreshold='20'
               bindscrolltoupper={this.handleBindscrolltoupper}
               onScroll={this.handleScroll}>
@@ -46,8 +46,8 @@ export default class PageView extends Component {
             </View>
             <ScrollView
               className='scrollview'
-              scroll-x
-              scroll-left='0'
+              scrollX
+              scrollLeft='0'
               style='white-space: nowrap;'
               bindscrolltolower={this.handleBindscrolltolower}>
               <View style='height:150px;background-color:rgb(26,173,25);display:inline-block;width: 300px;'>

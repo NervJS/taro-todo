@@ -111,7 +111,7 @@ export default class PageView extends Component {
                 step={1}
                 min={500}
                 max={2000}
-                value={this.state.interval}
+                value={this.state.duration}
                 onChange={this.setDuration} ></Slider>
             </View>
           </View>
