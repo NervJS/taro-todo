@@ -9,9 +9,6 @@ export default class About extends Component {
 
   constructor () {
     super(...arguments)
-    this.state = {
-      text: 'About'
-    }
   }
 
   componentDidMount () {
@@ -31,10 +28,14 @@ export default class About extends Component {
   }
 
   render () {
-    const text = this.state.text
     return (
       <View className='about'>
-        <View><Text>{text}</Text></View>
+        <View>
+          <Text>关于</Text>
+          <View className='info'>
+            <Text>Nerv-WEUI 基础组件是基于 WEUI 和 微信小程序 开发的组件库,目的是为了提供一套多端可使用的基础组件库,其样式与 WEUI 对齐,组件的调用方式跟 微信小程序 统一</Text>
+          </View>
+        </View>
       </View>
     )
   }
