@@ -31,7 +31,7 @@ export default class PageView extends Component {
     }
   }
 
-  handleReset () {
+  handleReset = () => {
     this.handleStop()
     this.setState({
       progress: 0
@@ -66,17 +66,17 @@ export default class PageView extends Component {
               </View>
             </View>
             <View className='progress-block'>
-              <View>{progress}</View>
               <View className='page-section-spacing '>
                 <Progress
-                  percent={progress}
-                  strokeWidth={2}
                   active
+                  showInfo
+                  strokeWidth={2}
+                  percent={progress}
                   activeColor='#3C7FE8' ></Progress>
                 <View>
-                  <Button onClick={this.handleStart.bind(this)}>加载</Button>
-                  <Button onClick={this.handleStop.bind(this)}>暂停</Button>
-                  <Button onClick={this.handleReset.bind(this)}>重置</Button>
+                  <Button onClick={this.handleStart}>加载</Button>
+                  <Button onClick={this.handleStop}>暂停</Button>
+                  <Button onClick={this.handleReset}>重置</Button>
                 </View>
               </View>
             </View>

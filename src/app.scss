@@ -254,3 +254,15 @@ form {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.wxapp-block{
+  text-align: center;
+  .sub-title{
+    display: inline-block;
+    padding: 60px 50px 10px;
+    margin-bottom: 40px;
+    font-size: 0.68267rem;
+    color: #bebebe;
+    border-bottom: 1px solid #d8d8d8;
+  }
+}

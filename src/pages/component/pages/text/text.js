@@ -1,7 +1,7 @@
 import './text.scss'
 
 import { Component } from '@tarojs/taro'
-import { View, Text, Button } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
@@ -36,31 +36,33 @@ export default class PageView extends Component {
         <Header title='Text'></Header>
         <View className='page-body'>
           <View className='page-section'>
-            <View className='text_content'>
-              {this.state.contents.map(item => {
-                return <Text>{item.text}</Text>
-              })}
-            </View>
+            <Text selectable>可选择的文字</Text>
           </View>
           <View className='page-section'>
-            <View className='flex-wrp' style='flex-direction:column;'>
-              <Button
-                className='btn-max-w button_style'
-                plain
-                type='default'
-                onClick={this.add}>
-                add line
-              </Button>
-              <Button
-                className='btn-max-w button_style'
-                plain
-                type='default'
-                disabled={!this.state.contents.length}
-                onClick={this.remove}>
-                remove line
-              </Button>
+            <Text>不可选择的文字</Text>
+          </View>
+          <View className='wxapp-block'>
+            <View className='sub-title'>仅工作在小程序</View>
+            <View className='page-section'>
+              <Text>不支持多          空格文字</Text>
+            </View>
+            <View className='page-section'>
+              <Text space='ensp'>多          空格文字(ensp)</Text>
+            </View>
+            <View className='page-section'>
+              <Text space='emsp'>多          空格文字(emsp)</Text>
+            </View>
+            <View className='page-section'>
+              <Text space='nbsp'>多          空格文字(nbsp)</Text>
+            </View>
+            <View className='page-section'>
+              <Text>不解码文字&gt;</Text>
+            </View>
+            <View className='page-section'>
+              <Text decode>解码文字&gt;</Text>
             </View>
           </View>
+
         </View>
       </View>
     )
