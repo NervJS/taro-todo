@@ -74,9 +74,9 @@ export default class PageView extends Component {
                   active
                   activeColor='#3C7FE8' ></Progress>
                 <View>
-                  <Button onClick={this.handleStart.bind(this)}>加载</Button>
-                  <Button onClick={this.handleStop.bind(this)}>暂停</Button>
-                  <Button onClick={this.handleReset.bind(this)}>重置</Button>
+                  <Button onClick={this.handleStart}>加载</Button>
+                  <Button onClick={this.handleStop}>暂停</Button>
+                  <Button onClick={this.handleReset}>重置</Button>
                 </View>
               </View>
             </View>
