@@ -6,9 +6,9 @@ import { View, Progress, Button } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends Component {
-  constructor() {
+  constructor () {
     super(...arguments)
-    this.timmer = null
+    this._timmer = null
   }
 
   state = {
@@ -16,29 +16,29 @@ export default class PageView extends Component {
   }
 
   handleStart = () => {
-    if (this.timmer) return
-    this.timmer = setInterval(() => {
+    if (this._timmer) return
+    this._timmer = setInterval(() => {
       this.setState({
-        process: ++this.state.progress
+        progress: ++this.state.progress
       })
     }, 500)
   }
 
   handleStop = () => {
-    if (this.timmer) {
-      clearImmediate(this.timmer)
-      this.timmer = null
+    if (this._timmer) {
+      clearInterval(this._timmer)
+      this._timmer = null
     }
   }
 
-  handleReset = () => {
+  handleReset () {
     this.handleStop()
     this.setState({
-      process: 0
+      progress: 0
     })
   }
 
-  render() {
+  render () {
     const { progress } = this.state
     return (
       <View className='container'>
@@ -65,8 +65,8 @@ export default class PageView extends Component {
                   activeColor='blue' ></Progress>
               </View>
             </View>
-            <View>{progress}</View>
             <View className='progress-block'>
+              <View>{progress}</View>
               <View className='page-section-spacing '>
                 <Progress
                   percent={progress}
@@ -74,9 +74,9 @@ export default class PageView extends Component {
                   active
                   activeColor='#3C7FE8' ></Progress>
                 <View>
-                  <Button onClick={this.handleStart}>加载</Button>
-                  <Button onClick={this.handleStop}>暂停</Button>
-                  <Button onClick={this.handleReset}>重置</Button>
+                  <Button onClick={this.handleStart.bind(this)}>加载</Button>
+                  <Button onClick={this.handleStop.bind(this)}>暂停</Button>
+                  <Button onClick={this.handleReset.bind(this)}>重置</Button>
                 </View>
               </View>
             </View>
