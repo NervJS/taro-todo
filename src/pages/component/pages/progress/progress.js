@@ -16,12 +16,16 @@ export default class PageView extends Component {
   }
 
   handleStart = () => {
-    if (this._timmer) return
+    if (this._timmer || this.state.progress > 100) return
     this._timmer = setInterval(() => {
+      const value = this.state.progress + 2
+      if (value > 100) {
+        return this.handleStop()
+      }
       this.setState({
-        progress: ++this.state.progress
+        progress: value
       })
-    }, 500)
+    }, 100)
   }
 
   handleStop = () => {

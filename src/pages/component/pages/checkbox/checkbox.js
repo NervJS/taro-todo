@@ -11,6 +11,7 @@ export default class PageCheckbox extends Component {
   }
 
   state = {
+    selectValues : ['中国'],
     list: [
       {
         value: '美国',
@@ -40,13 +41,16 @@ export default class PageCheckbox extends Component {
       {
         value: '法国',
         text: '法国',
-        checked: false
+        checked: true
       }
     ]
   }
   checkboxChange = e => {
-    console.log(e)
+    this.setState({
+      selectValues: e.detail.value
+    })
   }
+
   render () {
     return (
       <View className='container'>
@@ -68,6 +72,9 @@ export default class PageCheckbox extends Component {
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>推荐展示样式</Text>
+            </View>
+            <View className='select-box'>
+              当前选择: {this.state.selectValues}
             </View>
             <View>
               <View className='checkbox-list'>

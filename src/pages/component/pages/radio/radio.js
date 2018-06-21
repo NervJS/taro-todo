@@ -11,6 +11,8 @@ export default class PageRadio extends Component {
   }
 
   state = {
+    isChecked: false,
+    selectValue: '中国',
     list: [
       {
         value: '美国',
@@ -46,7 +48,9 @@ export default class PageRadio extends Component {
   }
 
   radioChange = e => {
-    console.log(e)
+    this.setState({
+      selectValue: e.detail.value
+    })
   }
 
   render () {
@@ -62,14 +66,20 @@ export default class PageRadio extends Component {
               <Radio value='选中' checked>
                 选中
               </Radio>
-              <Radio style='margin-left: 20px' value='未选中'>
+              <Radio style='margin-left: 50px' value='未选中'>
                 未选中
+              </Radio>
+              <Radio style='margin-left: 50px' checked={this.state.isChecked} onChange={this.handleChange}>
+                数据绑定
               </Radio>
             </View>
           </View>
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>推荐展示样式</Text>
+            </View>
+            <View className='select-box'>
+              选中的值是: {this.state.selectValue}
             </View>
             <View>
               <View className='radio-list'>

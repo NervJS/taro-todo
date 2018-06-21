@@ -16,57 +16,63 @@ export default class PageView extends Component {
   constructor () {
     super(...arguments)
     this.state = {
-      autoplay: false,
-      indicatorDots: true,
-      interval: 5000,
+      current: 1,
       duration: 500,
-      current: 0
+      interval: 5000,
+      isCircular: false,
+      isAutoplay: false,
+      hasIndicatorDots: true
     }
   }
 
-  hideIndication = e => {
+  setAutoPlay = (e) => {
     this.setState({
-      indicatorDots: !this.state.indicatorDots
+      isAutoplay: e.detail.value
     })
   }
 
-  isAutoPlay = () => {
+  setCircular = (e) => {
     this.setState({
-      autoplay: !this.state.autoplay
+      isCircular: e.detail.value
+    })
+  }
+
+  setIndicatorDots = e => {
+    this.setState({
+      hasIndicatorDots: e.detail.value
     })
   }
 
   setInterval = e => {
-    console.log(e)
     this.setState({
       interval: e.detail.value
     })
   }
 
   setDuration = e => {
-    console.log(e)
     this.setState({
       duration: e.detail.value
     })
   }
 
   render () {
+    const { current, isAutoplay, duration,isCircular, interval, hasIndicatorDots } = this.state
     return (
       <View className='container'>
         <Header title='Swiper'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <Swiper
-              className='test-h'
-              autoplay={this.state.autoplay}
-              indicatorDots={this.state.indicatorDots}
               slideMult='10'
-              duration={this.state.duration}
-              interval={this.state.interval}
+              className='test-h'
               indicatorColor='#999'
               indicatorActiveColor='#333'
-              current={this.state.current}
-              circular
+              current={current}
+              duration={duration}
+              interval={interval}
+              circular={isCircular}
+              autoplay={isAutoplay}
+              indicatorDots={hasIndicatorDots}
               preMargin='20'>
               <SwiperItem>
                 <View
@@ -95,11 +101,15 @@ export default class PageView extends Component {
             <View className='switch-list'>
               <View className='switch-list__item'>
                 <View className='switch-list__text'>指示点</View>
-                <Switch checked onChange={this.hideIndication} ></Switch>
+                <Switch checked={hasIndicatorDots} onChange={this.setIndicatorDots} ></Switch>
               </View>
               <View className='switch-list__item'>
                 <View className='switch-list__text'>自动播放</View>
-                <Switch onChange={this.isAutoPlay} ></Switch>
+                <Switch checked={isAutoplay} onChange={this.setAutoPlay} ></Switch>
+              </View>
+              <View className='switch-list__item'>
+                <View className='switch-list__text'>循环播放</View>
+                <Switch checked={isCircular} onChange={this.setCircular} ></Switch>
               </View>
             </View>
           </View>
@@ -113,8 +123,8 @@ export default class PageView extends Component {
                 step={1}
                 min={500}
                 max={2000}
-                value={this.state.duration}
-                onChange={this.setDuration} ></Slider>
+                value={duration}
+                onChange={this.setDuration}></Slider>
             </View>
           </View>
           <View className='page-section'>

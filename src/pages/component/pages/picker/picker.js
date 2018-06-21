@@ -11,16 +11,26 @@ export default class PagePicker extends Component {
   }
 
   state = {
-    selector: ['美国', '中国', '巴西', '日本'],
-    selectorChecked: '美国',
     timeSel: '12:01',
-    dateSel: '2018-04-22'
+    dateSel: '2018-04-22',
+    selectorValue: 1,
+    mulitSelectorValues: [],
+    selector: ['美国', '中国', '巴西', '日本'],
+    multiSelector: [['饭', '粥', '粉'], ['猪肉', '牛肉']],
   }
 
   handleChange = e => {
     this.setState({
-      selectorChecked: this.state.selector[e.detail.value]
+      selectorValue: e.detail.value
     })
+  }
+
+  handleMulitChange = e => {
+    console.log(e.detail)
+  }
+
+  handleColumnchange = e => {
+    console.log(e.detail)
   }
 
   handleTimeChange = e => {
@@ -28,6 +38,7 @@ export default class PagePicker extends Component {
       timeSel: e.detail.value
     })
   }
+
   handleDateChange = e => {
     this.setState({
       dateSel: e.detail.value
@@ -35,21 +46,39 @@ export default class PagePicker extends Component {
   }
 
   render () {
+    const { selector, multiSelector, selectorValue, mulitSelectorValues, timeSel, dateSel } = this.state
     return (
       <View className='container'>
         <Header title='Picker'></Header>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
-              <Text>地区选择器</Text>
+              <Text>普通选择器</Text>
             </View>
             <View>
               <Picker
                 mode='selector'
-                range={this.state.selector}
+                range={selector}
+                value={selectorValue}
                 onChange={this.handleChange}>
                 <View className='picker'>
-                  当前选择：{this.state.selectorChecked}
+                  当前选择：{selector[selectorValue]}
+                </View>
+              </Picker>
+            </View>
+          </View>
+          <View className='page-section'>
+            <View className='page-section-title'>
+              <Text>多行选择器</Text>
+            </View>
+            <View>
+              <Picker
+                mode='multiSelector'
+                range={multiSelector}
+                onChange={this.handleMulitChange}
+                onColumnchange={this.handleColumnchange}>
+                <View className='picker'>
+                  当前选择：{mulitSelectorValues}
                 </View>
               </Picker>
             </View>
@@ -59,8 +88,8 @@ export default class PagePicker extends Component {
               <Text>时间选择器</Text>
             </View>
             <View>
-              <Picker mode='time' onChange={this.handleTimeChange}>
-                <View className='picker'>当前选择：{this.state.timeSel}</View>
+              <Picker mode='time' onChange={this.handleTimeChange} value={timeSel}>
+                <View className='picker'>当前选择：{timeSel}</View>
               </Picker>
             </View>
           </View>
@@ -69,8 +98,8 @@ export default class PagePicker extends Component {
               <Text>日期选择器</Text>
             </View>
             <View>
-              <Picker mode='date' onChange={this.handleDateChange}>
-                <View className='picker'>当前选择：{this.state.dateSel}</View>
+              <Picker mode='date' onChange={this.handleDateChange} value={dateSel}>
+                <View className='picker'>当前选择：{dateSel}</View>
               </Picker>
             </View>
           </View>

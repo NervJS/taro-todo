@@ -1,6 +1,6 @@
 .radio-list {
     position: relative;
-    padding: 10px 15px;
+    padding: 0px 15px;
     background-color: #FFFFFF;
     &::before {
         content: " ";
@@ -22,12 +22,17 @@
         border-top: 1px solid #e5e5e5;
         color: #e5e5e5;
     }
+    
+}
+
+.select-box{
+    margin: 20px 0;
 }
 
 .radio-list__label {
     position: relative;
     display: flex;
-    padding: 10px 15px;
+    padding: 20px 15px;
     &:not(:first-child) {
         &::before {
             content: "";

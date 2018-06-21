@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px dashed #999;
   // padding-left: 180px;
   min-height: 120px;
 
@@ -20,9 +22,12 @@
 }
 
 .icon_right {
+  margin-left: auto;
+  margin-right: auto;
   &_head {
     color: #333;
     font-size: 32px;
+    margin-bottom: 10px;
   }
 
   &_tit {

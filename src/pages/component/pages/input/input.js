@@ -14,7 +14,7 @@ export default class PageInput extends Component {
 
   onInput = e => {
     this.setState({
-      value: e.detail.value
+      value: e.target.value
     })
   }
 

@@ -10,7 +10,16 @@ export default class PageSwitch extends Component {
     super(...arguments)
   }
 
-  state = {}
+  state = {
+    isChecked: false
+  }
+
+  setIsChecked = (e) => {
+    const { detail } = e
+    this.setState({
+      isChecked: detail.value
+    })
+  }
 
   render () {
     return (
@@ -19,25 +28,35 @@ export default class PageSwitch extends Component {
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
-              <Text>默认样式</Text>
+              <Text>静态展示</Text>
             </View>
-            <View className='page-section-spacing-reset'>
-              <Switch checked ></Switch>
-              <Switch ></Switch>
+            <View className='switch-list'>
+              <View className='switch-list__item'>
+                <View className='switch-list__text'>关闭</View>
+                <Switch></Switch>
+              </View>
+              <View className='switch-list__item'>
+                <View className='switch-list__text'>开启中</View>
+                <Switch checked></Switch>
+              </View>
+              <View className='switch-list__item'>
+                <View className='switch-list__text'>更换颜色</View>
+                <Switch checked color='#6190E8'></Switch>
+              </View>
+              <View className='switch-list__item'>
+                <View className='switch-list__text'>CheckBox形式</View>
+                <Switch type='checkbox'></Switch>
+              </View>
             </View>
           </View>
           <View className='page-section'>
             <View className='page-section-title'>
-              <Text>推荐展示样式</Text>
+              <Text>数据绑定</Text>
             </View>
             <View className='switch-list'>
               <View className='switch-list__item'>
                 <View className='switch-list__text'>开启中</View>
-                <Switch checked ></Switch>
-              </View>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>关闭</View>
-                <Switch ></Switch>
+                <Switch onChange={this.setIsChecked} checked={this.state.isChecked}></Switch>
               </View>
             </View>
           </View>
