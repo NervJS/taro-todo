@@ -13,9 +13,13 @@ import { increment, decrement, asyncInc } from '../../actions/counter'
 class Tab extends Component {
 
   handler = () => {
-    console.log(this.props.t)
+    console.log(this)
     console.log(diao)
     this.props.xx()
+  }
+
+  componentDidMount () {
+    console.log(this.props)
   }
 
   render () {
