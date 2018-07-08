@@ -19,7 +19,7 @@ $ yarn install
 
 ```bash
 # npm script
-$ npm run dev:weapp
+$ npm run serve:weapp
 # 仅限全局安装
 $ taro build --type weapp --watch
 # npx用户也可以使用
@@ -29,7 +29,7 @@ $ npx taro build --type weapp --watch
 H5编译预览模式
 ```bash
 # npm script
-$ npm run dev:h5
+$ npm run serve:h5
 # 仅限全局安装
 $ taro build --type h5 --watch
 # npx用户也可以使用
@@ -41,7 +41,7 @@ $ npx taro build --type h5 --watch
 打包小程序代码
 ```bash
 # npm script
-$ npm build dev:weapp
+$ npm run build:weapp
 # 仅限全局安装
 $ taro build --type weapp
 # npx用户也可以使用
@@ -51,7 +51,7 @@ $ npx taro build --type weapp
 打包H5代码
 ```bash
 # npm script
-$ npm build dev:h5
+$ npm run build:h5
 # 仅限全局安装
 $ taro build --type h5
 # npx用户也可以使用
