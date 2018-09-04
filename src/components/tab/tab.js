@@ -15,7 +15,7 @@ class Tab extends Component {
   handler = () => {
     console.log(this)
     console.log(diao)
-    this.props.xx()
+    this.props.onXx()
   }
 
   componentDidMount () {

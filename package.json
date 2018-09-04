@@ -12,15 +12,15 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"@tarojs/async-await": "0.0.69",
-		"@tarojs/components": "0.0.69",
-		"@tarojs/redux": "0.0.69",
-		"@tarojs/router": "0.0.69",
-		"@tarojs/taro": "0.0.69",
-		"@tarojs/taro-h5": "0.0.69",
-		"@tarojs/taro-weapp": "0.0.69",
+		"@tarojs/async-await": "1.0.0-beta.23",
+		"@tarojs/components": "1.0.0-beta.23",
+		"@tarojs/redux": "1.0.0-beta.23",
+		"@tarojs/router": "1.0.0-beta.23",
+		"@tarojs/taro": "1.0.0-beta.23",
+		"@tarojs/taro-h5": "1.0.0-beta.23",
+		"@tarojs/taro-weapp": "1.0.0-beta.23",
 		"@tarojs/transformer-wx": "0.0.56",
-		"@tarojs/webpack-runner": "0.0.69",
+		"@tarojs/webpack-runner": "1.0.0-beta.23",
 		"nerv-redux": "^1.2.17",
 		"nervjs": "^1.2.16",
 		"redux": "^3.7.2",
@@ -28,18 +28,18 @@
 		"redux-thunk": "^2.2.0"
 	},
 	"devDependencies": {
-		"@tarojs/plugin-babel": "0.0.69",
-		"@tarojs/plugin-sass": "0.0.69",
-		"@tarojs/webpack-runner": "0.0.69",
+		"@tarojs/plugin-babel": "1.0.0-beta.23",
+		"@tarojs/plugin-sass": "1.0.0-beta.23",
+		"@tarojs/webpack-runner": "1.0.0-beta.23",
 		"babel-eslint": "^8.2.3",
 		"babel-plugin-transform-class-properties": "^6.24.1",
 		"babel-plugin-transform-decorators-legacy": "^1.3.4",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.6.1",
 		"eslint": "^4.19.1",
-		"eslint-config-taro": "0.0.69",
+		"eslint-config-taro": "1.0.0-beta.23",
 		"eslint-plugin-import": "^2.12.0",
 		"eslint-plugin-react": "^7.8.2",
-		"eslint-plugin-taro": "0.0.69"
+		"eslint-plugin-taro": "1.0.0-beta.23"
 	}
 }

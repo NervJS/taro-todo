@@ -73,7 +73,7 @@ class Index extends Component {
   xxhanlder = () => {
     console.log('sdsddssd')
   }
-  
+
   componentDidShow () {
     console.log('index show')
   }
@@ -110,8 +110,8 @@ class Index extends Component {
         <View>
           <Image src={this.state.imagesList[0]} />
         </View>
-        <Tab xx={this.xxhanlder} t={1} />
-        <Tab xx={this.xxhanlder} t={2} />
+        <Tab onXx={this.xxhanlder} t={1} />
+        <Tab onXx={this.xxhanlder} t={2} />
         <View>
           <Image src={dogPic} />
         </View>
