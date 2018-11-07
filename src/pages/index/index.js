@@ -29,6 +29,17 @@ class Index extends Component {
         'https://img1.360buyimg.com/da/jfs/t14950/329/2565843691/99347/46a6681f/5ab21540N21d5240c.jpg'
       ]
     }
+    // my.confirm({
+    //   title: '温馨提示',
+    //   content: '您是否想查询快递单号:1234567890',
+    //   confirmButtonText: '马上查询',
+    //   cancelButtonText: '暂不需要',
+    //   success: (result) => {
+    //     my.alert({
+    //       title: `${result.confirm}`,
+    //     });
+    //   },
+    // });
   }
 
   addTodoClick = async () => {
@@ -72,6 +83,23 @@ class Index extends Component {
 
   xxhanlder = () => {
     console.log('sdsddssd')
+  }
+
+  componentDidMount () {
+    Taro.setStorageSync('user', 'sdsdds')
+    console.log(Taro.getStorageSync('user'))
+    Taro.showModal({
+      title: '提示',
+      content: '这是一个模态弹窗',
+      cancelText: 'sd',
+      success (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 
   componentDidShow () {
