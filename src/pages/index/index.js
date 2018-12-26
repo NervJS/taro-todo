@@ -64,6 +64,7 @@ class Index extends Component {
   }
 
   setTodoValue = e => {
+    console.log('122')
     this.changeTimer && clearTimeout(this.changeTimer)
     this.changeTimer = setTimeout(() => {
       this.setState({
@@ -88,18 +89,7 @@ class Index extends Component {
   componentDidMount () {
     Taro.setStorageSync('user', 'sdsdds')
     console.log(Taro.getStorageSync('user'))
-    Taro.showModal({
-      title: '提示',
-      content: '这是一个模态弹窗',
-      cancelText: 'sd',
-      success (res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-        } else {
-          console.log('用户点击取消')
-        }
-      }
-    })
+
   }
 
   componentDidShow () {
@@ -116,7 +106,7 @@ class Index extends Component {
 
   navigateTo () {
     Taro.navigateTo({
-      url: '/pages/about/about'
+      url: '/pages/about/about?sd=1'
     })
   }
 

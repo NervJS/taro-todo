@@ -13,6 +13,7 @@ export default class About extends Component {
 
   componentDidMount () {
     console.log('about mount')
+    console.log(this.$router.params)
   }
 
   componentDidShow () {
