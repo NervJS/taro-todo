@@ -47,7 +47,9 @@ class Index extends Component {
       createTime: new Date().getTime(),
       title: this.state.inputTodoValue
     })
-    const res = await Taro.request(`https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`)
+    const res = await Taro.request({
+      url: `https://api.github.com/search/repositories?q=${this.state.inputTodoValue}`
+    })
     if (res.statusCode === 200 || res.statusCode === 201) {
       this.setState({
         githubList: res.data.items
